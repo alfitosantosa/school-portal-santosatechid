@@ -1,5 +1,5 @@
 # Hapus image lama
-docker rmi school-management:latest
+docker rmi school-management-santosatechid:latest
 
 # Build ulang dengan optimasi
 docker compose build --no-cache

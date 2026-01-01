@@ -7,13 +7,13 @@ services:
         - NODE_ENV=production
       # PENTING: Tambahkan ini untuk cleanup build cache
       cache_from:
-        - school-management:latest
+        - school-management-santosatechid:latest
       # Batasi build context
       labels:
         - "com.docker.compose.project=school-management"
     
-    image: school-management:latest
-    container_name: school-management-app
+    image: school-management-santosatechid:latest
+    container_name: school-management-santosatechid-app
     restart: unless-stopped
 
     ports:
@@ -63,8 +63,8 @@ services:
       - app-network
 
     labels:
-      - "com.school-management.service=app"
-      - "com.school-management.environment=production"
+      - "com.school-management-santosatechid.service=app"
+      - "com.school-management-santosatechid.environment=production"
 
   # ==========================================
   # CLEANUP SERVICE - Otomatis bersihkan unused images/containers
