@@ -134,6 +134,8 @@ model Role {
   permissions String[]
   isActive    Boolean    @default(true)
   userData    UserData[]
+  createdAt   DateTime?  @default(now())
+  updatedAt   DateTime?  @updatedAt
 
   @@map("roles")
 }
@@ -159,14 +161,18 @@ model AcademicYear {
 }
 
 model Major {
-  id          String     @id @default(cuid())
-  code        String     @unique
+  id          String  @id @default(cuid())
+  code        String  @unique
   name        String
   description String?
-  isActive    Boolean    @default(true)
-  classes     Class[]
-  subjects    Subject[]
-  students    UserData[] @relation("UserMajor")
+  isActive    Boolean @default(true)
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  classes  Class[]
+  subjects Subject[]
+  students UserData[] @relation("UserMajor")
 
   @@map("majors")
 }
@@ -200,6 +206,8 @@ model Subject {
   majorId             String?
   credits             Int                  @default(2)
   isActive            Boolean              @default(true)
+  createdAt           DateTime?            @default(now())
+  updatedAt           DateTime?            @updatedAt
   assignments         Assignment[]
   gradeConfigurations GradeConfiguration[]
   grades              Grade[]
@@ -221,6 +229,8 @@ model Schedule {
   endTime        String
   room           String?
   isActive       Boolean      @default(true)
+  createdAt      DateTime?    @default(now())
+  updatedAt      DateTime?    @updatedAt
   assignments    Assignment[]
   attendances    Attendance[]
   grades         Grade[]
@@ -240,6 +250,7 @@ model Attendance {
   status     String
   notes      String?
   createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
   date       DateTime
   schedule   Schedule @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
   student    UserData @relation("StudentAttendance", fields: [studentId], references: [id], onDelete: Cascade)
@@ -270,6 +281,7 @@ model Violation {
   status          String        @default("active")
   reportedBy      String
   createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
   date            DateTime
   resolutionDate  DateTime?
   resolutionNotes String?
@@ -281,13 +293,17 @@ model Violation {
 }
 
 model PaymentType {
-  id          String    @id @default(cuid())
-  name        String    @unique
+  id          String  @id @default(cuid())
+  name        String  @unique
   description String
   amount      Decimal
-  isMonthly   Boolean   @default(false)
-  isActive    Boolean   @default(true)
-  payments    Payment[]
+  isMonthly   Boolean @default(false)
+  isActive    Boolean @default(true)
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  payments Payment[]
 
   @@map("payment_types")
 }
@@ -301,6 +317,7 @@ model Payment {
   status        String      @default("pending")
   notes         String?
   createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
   paymentDate   DateTime
   receiptNumber String?
   paymentType   PaymentType @relation(fields: [paymentTypeId], references: [id])
@@ -433,8 +450,8 @@ model GradeScale {
   maxScore       Decimal
   letterGrade    String
   predicate      String
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
+  createdAt      DateTime?     @default(now())
+  updatedAt      DateTime?     @updatedAt
   academicYear   AcademicYear? @relation(fields: [academicYearId], references: [id], onDelete: Cascade)
 
   @@index([academicYearId])
@@ -458,8 +475,8 @@ model Assignment {
   gradeTypeId         String?
   isPublished         Boolean                @default(false)
   isActive            Boolean                @default(true)
-  createdAt           DateTime               @default(now())
-  updatedAt           DateTime               @updatedAt
+  createdAt           DateTime?              @default(now())
+  updatedAt           DateTime?              @updatedAt
   createdBy           String
   submissions         AssignmentSubmission[]
   class               Class                  @relation(fields: [classId], references: [id])
@@ -483,15 +500,15 @@ model AssignmentSubmission {
   studentId    String
   attachments  Json?
   notes        String?
-  submittedAt  DateTime   @default(now())
+  submittedAt  DateTime?  @default(now())
   isLate       Boolean    @default(false)
   score        Decimal?
   feedback     String?
   gradedAt     DateTime?
   gradedBy     String?
   status       String     @default("submitted")
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
+  createdAt    DateTime?  @default(now())
+  updatedAt    DateTime?  @updatedAt
   assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
   student      UserData   @relation("StudentSubmission", fields: [studentId], references: [id], onDelete: Cascade)
 
@@ -512,7 +529,7 @@ model Notification {
   isRead    Boolean   @default(false)
   link      String?
   data      Json?
-  createdAt DateTime  @default(now())
+  createdAt DateTime? @default(now())
   readAt    DateTime?
   user      UserData  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -532,8 +549,8 @@ model DashboardContent {
   isPublished Boolean   @default(false)
   startDate   DateTime?
   endDate     DateTime?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime? @updatedAt
   userId      String?
   user        UserData? @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -550,8 +567,8 @@ model Announcement {
   isPublished Boolean   @default(false)
   startDate   DateTime?
   endDate     DateTime?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime? @updatedAt
   userId      String?
   user        UserData? @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -567,8 +584,8 @@ model TahfidzRecord {
   grade      String?
   date       DateTime
   notes      String?
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime? @updatedAt
   user       UserData? @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("tahfidz_records")
@@ -583,9 +600,9 @@ model TeacherAttendance {
   checkoutTime  DateTime?
   notes         String?
   createdBy     String
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  createdByUser UserData  @relation("CreatedAttendance", fields: [createdBy], references: [id], onDelete: SetNull)
+  createdAt     DateTime? @default(now())
+  updatedAt     DateTime? @updatedAt
+  createdByUser UserData? @relation("CreatedAttendance", fields: [createdBy], references: [id], onDelete: SetNull)
   teacher       UserData  @relation("TeacherAttendance", fields: [teacherId], references: [id], onDelete: Cascade)
 
   @@unique([teacherId, date])

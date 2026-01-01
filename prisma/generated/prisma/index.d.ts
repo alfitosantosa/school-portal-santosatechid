@@ -10472,6 +10472,8 @@ export namespace Prisma {
     name: string | null
     description: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type RoleMaxAggregateOutputType = {
@@ -10479,6 +10481,8 @@ export namespace Prisma {
     name: string | null
     description: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type RoleCountAggregateOutputType = {
@@ -10487,6 +10491,8 @@ export namespace Prisma {
     description: number
     permissions: number
     isActive: number
+    createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -10496,6 +10502,8 @@ export namespace Prisma {
     name?: true
     description?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type RoleMaxAggregateInputType = {
@@ -10503,6 +10511,8 @@ export namespace Prisma {
     name?: true
     description?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type RoleCountAggregateInputType = {
@@ -10511,6 +10521,8 @@ export namespace Prisma {
     description?: true
     permissions?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -10592,6 +10604,8 @@ export namespace Prisma {
     description: string
     permissions: string[]
     isActive: boolean
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: RoleCountAggregateOutputType | null
     _min: RoleMinAggregateOutputType | null
     _max: RoleMaxAggregateOutputType | null
@@ -10617,6 +10631,8 @@ export namespace Prisma {
     description?: boolean
     permissions?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     userData?: boolean | Role$userDataArgs<ExtArgs>
     _count?: boolean | RoleCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["role"]>
@@ -10627,6 +10643,8 @@ export namespace Prisma {
     description?: boolean
     permissions?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["role"]>
 
   export type RoleSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -10635,6 +10653,8 @@ export namespace Prisma {
     description?: boolean
     permissions?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["role"]>
 
   export type RoleSelectScalar = {
@@ -10643,9 +10663,11 @@ export namespace Prisma {
     description?: boolean
     permissions?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type RoleOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "permissions" | "isActive", ExtArgs["result"]["role"]>
+  export type RoleOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "permissions" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["role"]>
   export type RoleInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     userData?: boolean | Role$userDataArgs<ExtArgs>
     _count?: boolean | RoleCountOutputTypeDefaultArgs<ExtArgs>
@@ -10664,6 +10686,8 @@ export namespace Prisma {
       description: string
       permissions: string[]
       isActive: boolean
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["role"]>
     composites: {}
   }
@@ -11093,6 +11117,8 @@ export namespace Prisma {
     readonly description: FieldRef<"Role", 'String'>
     readonly permissions: FieldRef<"Role", 'String[]'>
     readonly isActive: FieldRef<"Role", 'Boolean'>
+    readonly createdAt: FieldRef<"Role", 'DateTime'>
+    readonly updatedAt: FieldRef<"Role", 'DateTime'>
   }
     
 
@@ -12831,6 +12857,8 @@ export namespace Prisma {
     name: string | null
     description: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type MajorMaxAggregateOutputType = {
@@ -12839,6 +12867,8 @@ export namespace Prisma {
     name: string | null
     description: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type MajorCountAggregateOutputType = {
@@ -12847,6 +12877,8 @@ export namespace Prisma {
     name: number
     description: number
     isActive: number
+    createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -12857,6 +12889,8 @@ export namespace Prisma {
     name?: true
     description?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type MajorMaxAggregateInputType = {
@@ -12865,6 +12899,8 @@ export namespace Prisma {
     name?: true
     description?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type MajorCountAggregateInputType = {
@@ -12873,6 +12909,8 @@ export namespace Prisma {
     name?: true
     description?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -12954,6 +12992,8 @@ export namespace Prisma {
     name: string
     description: string | null
     isActive: boolean
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: MajorCountAggregateOutputType | null
     _min: MajorMinAggregateOutputType | null
     _max: MajorMaxAggregateOutputType | null
@@ -12979,6 +13019,8 @@ export namespace Prisma {
     name?: boolean
     description?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     classes?: boolean | Major$classesArgs<ExtArgs>
     subjects?: boolean | Major$subjectsArgs<ExtArgs>
     students?: boolean | Major$studentsArgs<ExtArgs>
@@ -12991,6 +13033,8 @@ export namespace Prisma {
     name?: boolean
     description?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["major"]>
 
   export type MajorSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -12999,6 +13043,8 @@ export namespace Prisma {
     name?: boolean
     description?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["major"]>
 
   export type MajorSelectScalar = {
@@ -13007,9 +13053,11 @@ export namespace Prisma {
     name?: boolean
     description?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type MajorOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "code" | "name" | "description" | "isActive", ExtArgs["result"]["major"]>
+  export type MajorOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "code" | "name" | "description" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["major"]>
   export type MajorInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     classes?: boolean | Major$classesArgs<ExtArgs>
     subjects?: boolean | Major$subjectsArgs<ExtArgs>
@@ -13032,6 +13080,8 @@ export namespace Prisma {
       name: string
       description: string | null
       isActive: boolean
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["major"]>
     composites: {}
   }
@@ -13463,6 +13513,8 @@ export namespace Prisma {
     readonly name: FieldRef<"Major", 'String'>
     readonly description: FieldRef<"Major", 'String'>
     readonly isActive: FieldRef<"Major", 'Boolean'>
+    readonly createdAt: FieldRef<"Major", 'DateTime'>
+    readonly updatedAt: FieldRef<"Major", 'DateTime'>
   }
     
 
@@ -15269,6 +15321,8 @@ export namespace Prisma {
     majorId: string | null
     credits: number | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type SubjectMaxAggregateOutputType = {
@@ -15279,6 +15333,8 @@ export namespace Prisma {
     majorId: string | null
     credits: number | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type SubjectCountAggregateOutputType = {
@@ -15289,6 +15345,8 @@ export namespace Prisma {
     majorId: number
     credits: number
     isActive: number
+    createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -15309,6 +15367,8 @@ export namespace Prisma {
     majorId?: true
     credits?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type SubjectMaxAggregateInputType = {
@@ -15319,6 +15379,8 @@ export namespace Prisma {
     majorId?: true
     credits?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type SubjectCountAggregateInputType = {
@@ -15329,6 +15391,8 @@ export namespace Prisma {
     majorId?: true
     credits?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -15426,6 +15490,8 @@ export namespace Prisma {
     majorId: string | null
     credits: number
     isActive: boolean
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: SubjectCountAggregateOutputType | null
     _avg: SubjectAvgAggregateOutputType | null
     _sum: SubjectSumAggregateOutputType | null
@@ -15455,6 +15521,8 @@ export namespace Prisma {
     majorId?: boolean
     credits?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     assignments?: boolean | Subject$assignmentsArgs<ExtArgs>
     gradeConfigurations?: boolean | Subject$gradeConfigurationsArgs<ExtArgs>
     grades?: boolean | Subject$gradesArgs<ExtArgs>
@@ -15472,6 +15540,8 @@ export namespace Prisma {
     majorId?: boolean
     credits?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     major?: boolean | Subject$majorArgs<ExtArgs>
   }, ExtArgs["result"]["subject"]>
 
@@ -15483,6 +15553,8 @@ export namespace Prisma {
     majorId?: boolean
     credits?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     major?: boolean | Subject$majorArgs<ExtArgs>
   }, ExtArgs["result"]["subject"]>
 
@@ -15494,9 +15566,11 @@ export namespace Prisma {
     majorId?: boolean
     credits?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type SubjectOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "code" | "name" | "description" | "majorId" | "credits" | "isActive", ExtArgs["result"]["subject"]>
+  export type SubjectOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "code" | "name" | "description" | "majorId" | "credits" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["subject"]>
   export type SubjectInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     assignments?: boolean | Subject$assignmentsArgs<ExtArgs>
     gradeConfigurations?: boolean | Subject$gradeConfigurationsArgs<ExtArgs>
@@ -15531,6 +15605,8 @@ export namespace Prisma {
       majorId: string | null
       credits: number
       isActive: boolean
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["subject"]>
     composites: {}
   }
@@ -15967,6 +16043,8 @@ export namespace Prisma {
     readonly majorId: FieldRef<"Subject", 'String'>
     readonly credits: FieldRef<"Subject", 'Int'>
     readonly isActive: FieldRef<"Subject", 'Boolean'>
+    readonly createdAt: FieldRef<"Subject", 'DateTime'>
+    readonly updatedAt: FieldRef<"Subject", 'DateTime'>
   }
     
 
@@ -16551,6 +16629,8 @@ export namespace Prisma {
     endTime: string | null
     room: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type ScheduleMaxAggregateOutputType = {
@@ -16564,6 +16644,8 @@ export namespace Prisma {
     endTime: string | null
     room: string | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type ScheduleCountAggregateOutputType = {
@@ -16577,6 +16659,8 @@ export namespace Prisma {
     endTime: number
     room: number
     isActive: number
+    createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -16600,6 +16684,8 @@ export namespace Prisma {
     endTime?: true
     room?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type ScheduleMaxAggregateInputType = {
@@ -16613,6 +16699,8 @@ export namespace Prisma {
     endTime?: true
     room?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type ScheduleCountAggregateInputType = {
@@ -16626,6 +16714,8 @@ export namespace Prisma {
     endTime?: true
     room?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -16726,6 +16816,8 @@ export namespace Prisma {
     endTime: string
     room: string | null
     isActive: boolean
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: ScheduleCountAggregateOutputType | null
     _avg: ScheduleAvgAggregateOutputType | null
     _sum: ScheduleSumAggregateOutputType | null
@@ -16758,6 +16850,8 @@ export namespace Prisma {
     endTime?: boolean
     room?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     assignments?: boolean | Schedule$assignmentsArgs<ExtArgs>
     attendances?: boolean | Schedule$attendancesArgs<ExtArgs>
     grades?: boolean | Schedule$gradesArgs<ExtArgs>
@@ -16779,6 +16873,8 @@ export namespace Prisma {
     endTime?: boolean
     room?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     academicYear?: boolean | AcademicYearDefaultArgs<ExtArgs>
     class?: boolean | ClassDefaultArgs<ExtArgs>
     subject?: boolean | SubjectDefaultArgs<ExtArgs>
@@ -16796,6 +16892,8 @@ export namespace Prisma {
     endTime?: boolean
     room?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     academicYear?: boolean | AcademicYearDefaultArgs<ExtArgs>
     class?: boolean | ClassDefaultArgs<ExtArgs>
     subject?: boolean | SubjectDefaultArgs<ExtArgs>
@@ -16813,9 +16911,11 @@ export namespace Prisma {
     endTime?: boolean
     room?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type ScheduleOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "classId" | "subjectId" | "teacherId" | "academicYearId" | "dayOfWeek" | "startTime" | "endTime" | "room" | "isActive", ExtArgs["result"]["schedule"]>
+  export type ScheduleOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "classId" | "subjectId" | "teacherId" | "academicYearId" | "dayOfWeek" | "startTime" | "endTime" | "room" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["schedule"]>
   export type ScheduleInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     assignments?: boolean | Schedule$assignmentsArgs<ExtArgs>
     attendances?: boolean | Schedule$attendancesArgs<ExtArgs>
@@ -16861,6 +16961,8 @@ export namespace Prisma {
       endTime: string
       room: string | null
       isActive: boolean
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["schedule"]>
     composites: {}
   }
@@ -17301,6 +17403,8 @@ export namespace Prisma {
     readonly endTime: FieldRef<"Schedule", 'String'>
     readonly room: FieldRef<"Schedule", 'String'>
     readonly isActive: FieldRef<"Schedule", 'Boolean'>
+    readonly createdAt: FieldRef<"Schedule", 'DateTime'>
+    readonly updatedAt: FieldRef<"Schedule", 'DateTime'>
   }
     
 
@@ -17804,6 +17908,7 @@ export namespace Prisma {
     status: string | null
     notes: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     date: Date | null
   }
 
@@ -17814,6 +17919,7 @@ export namespace Prisma {
     status: string | null
     notes: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     date: Date | null
   }
 
@@ -17824,6 +17930,7 @@ export namespace Prisma {
     status: number
     notes: number
     createdAt: number
+    updatedAt: number
     date: number
     _all: number
   }
@@ -17836,6 +17943,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
   }
 
@@ -17846,6 +17954,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
   }
 
@@ -17856,6 +17965,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
     _all?: true
   }
@@ -17939,6 +18049,7 @@ export namespace Prisma {
     status: string
     notes: string | null
     createdAt: Date
+    updatedAt: Date
     date: Date
     _count: AttendanceCountAggregateOutputType | null
     _min: AttendanceMinAggregateOutputType | null
@@ -17966,6 +18077,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     schedule?: boolean | ScheduleDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -17978,6 +18090,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     schedule?: boolean | ScheduleDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -17990,6 +18103,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     schedule?: boolean | ScheduleDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -18002,10 +18116,11 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
   }
 
-  export type AttendanceOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "scheduleId" | "status" | "notes" | "createdAt" | "date", ExtArgs["result"]["attendance"]>
+  export type AttendanceOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "scheduleId" | "status" | "notes" | "createdAt" | "updatedAt" | "date", ExtArgs["result"]["attendance"]>
   export type AttendanceInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     schedule?: boolean | ScheduleDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -18032,6 +18147,7 @@ export namespace Prisma {
       status: string
       notes: string | null
       createdAt: Date
+      updatedAt: Date
       date: Date
     }, ExtArgs["result"]["attendance"]>
     composites: {}
@@ -18464,6 +18580,7 @@ export namespace Prisma {
     readonly status: FieldRef<"Attendance", 'String'>
     readonly notes: FieldRef<"Attendance", 'String'>
     readonly createdAt: FieldRef<"Attendance", 'DateTime'>
+    readonly updatedAt: FieldRef<"Attendance", 'DateTime'>
     readonly date: FieldRef<"Attendance", 'DateTime'>
   }
     
@@ -20033,6 +20150,7 @@ export namespace Prisma {
     status: string | null
     reportedBy: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     date: Date | null
     resolutionDate: Date | null
     resolutionNotes: string | null
@@ -20047,6 +20165,7 @@ export namespace Prisma {
     status: string | null
     reportedBy: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     date: Date | null
     resolutionDate: Date | null
     resolutionNotes: string | null
@@ -20061,6 +20180,7 @@ export namespace Prisma {
     status: number
     reportedBy: number
     createdAt: number
+    updatedAt: number
     date: number
     resolutionDate: number
     resolutionNotes: number
@@ -20077,6 +20197,7 @@ export namespace Prisma {
     status?: true
     reportedBy?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
     resolutionDate?: true
     resolutionNotes?: true
@@ -20091,6 +20212,7 @@ export namespace Prisma {
     status?: true
     reportedBy?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
     resolutionDate?: true
     resolutionNotes?: true
@@ -20105,6 +20227,7 @@ export namespace Prisma {
     status?: true
     reportedBy?: true
     createdAt?: true
+    updatedAt?: true
     date?: true
     resolutionDate?: true
     resolutionNotes?: true
@@ -20192,6 +20315,7 @@ export namespace Prisma {
     status: string
     reportedBy: string
     createdAt: Date
+    updatedAt: Date
     date: Date
     resolutionDate: Date | null
     resolutionNotes: string | null
@@ -20223,6 +20347,7 @@ export namespace Prisma {
     status?: boolean
     reportedBy?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     resolutionDate?: boolean
     resolutionNotes?: boolean
@@ -20240,6 +20365,7 @@ export namespace Prisma {
     status?: boolean
     reportedBy?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     resolutionDate?: boolean
     resolutionNotes?: boolean
@@ -20257,6 +20383,7 @@ export namespace Prisma {
     status?: boolean
     reportedBy?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     resolutionDate?: boolean
     resolutionNotes?: boolean
@@ -20274,12 +20401,13 @@ export namespace Prisma {
     status?: boolean
     reportedBy?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     date?: boolean
     resolutionDate?: boolean
     resolutionNotes?: boolean
   }
 
-  export type ViolationOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "violationTypeId" | "classId" | "description" | "status" | "reportedBy" | "createdAt" | "date" | "resolutionDate" | "resolutionNotes", ExtArgs["result"]["violation"]>
+  export type ViolationOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "violationTypeId" | "classId" | "description" | "status" | "reportedBy" | "createdAt" | "updatedAt" | "date" | "resolutionDate" | "resolutionNotes", ExtArgs["result"]["violation"]>
   export type ViolationInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     class?: boolean | ClassDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -20312,6 +20440,7 @@ export namespace Prisma {
       status: string
       reportedBy: string
       createdAt: Date
+      updatedAt: Date
       date: Date
       resolutionDate: Date | null
       resolutionNotes: string | null
@@ -20749,6 +20878,7 @@ export namespace Prisma {
     readonly status: FieldRef<"Violation", 'String'>
     readonly reportedBy: FieldRef<"Violation", 'String'>
     readonly createdAt: FieldRef<"Violation", 'DateTime'>
+    readonly updatedAt: FieldRef<"Violation", 'DateTime'>
     readonly date: FieldRef<"Violation", 'DateTime'>
     readonly resolutionDate: FieldRef<"Violation", 'DateTime'>
     readonly resolutionNotes: FieldRef<"Violation", 'String'>
@@ -21193,6 +21323,8 @@ export namespace Prisma {
     amount: Decimal | null
     isMonthly: boolean | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type PaymentTypeMaxAggregateOutputType = {
@@ -21202,6 +21334,8 @@ export namespace Prisma {
     amount: Decimal | null
     isMonthly: boolean | null
     isActive: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type PaymentTypeCountAggregateOutputType = {
@@ -21211,6 +21345,8 @@ export namespace Prisma {
     amount: number
     isMonthly: number
     isActive: number
+    createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -21230,6 +21366,8 @@ export namespace Prisma {
     amount?: true
     isMonthly?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type PaymentTypeMaxAggregateInputType = {
@@ -21239,6 +21377,8 @@ export namespace Prisma {
     amount?: true
     isMonthly?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
   }
 
   export type PaymentTypeCountAggregateInputType = {
@@ -21248,6 +21388,8 @@ export namespace Prisma {
     amount?: true
     isMonthly?: true
     isActive?: true
+    createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -21344,6 +21486,8 @@ export namespace Prisma {
     amount: Decimal
     isMonthly: boolean
     isActive: boolean
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: PaymentTypeCountAggregateOutputType | null
     _avg: PaymentTypeAvgAggregateOutputType | null
     _sum: PaymentTypeSumAggregateOutputType | null
@@ -21372,6 +21516,8 @@ export namespace Prisma {
     amount?: boolean
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
     payments?: boolean | PaymentType$paymentsArgs<ExtArgs>
     _count?: boolean | PaymentTypeCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["paymentType"]>
@@ -21383,6 +21529,8 @@ export namespace Prisma {
     amount?: boolean
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["paymentType"]>
 
   export type PaymentTypeSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -21392,6 +21540,8 @@ export namespace Prisma {
     amount?: boolean
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["paymentType"]>
 
   export type PaymentTypeSelectScalar = {
@@ -21401,9 +21551,11 @@ export namespace Prisma {
     amount?: boolean
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type PaymentTypeOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "amount" | "isMonthly" | "isActive", ExtArgs["result"]["paymentType"]>
+  export type PaymentTypeOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "amount" | "isMonthly" | "isActive" | "createdAt" | "updatedAt", ExtArgs["result"]["paymentType"]>
   export type PaymentTypeInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     payments?: boolean | PaymentType$paymentsArgs<ExtArgs>
     _count?: boolean | PaymentTypeCountOutputTypeDefaultArgs<ExtArgs>
@@ -21423,6 +21575,8 @@ export namespace Prisma {
       amount: Prisma.Decimal
       isMonthly: boolean
       isActive: boolean
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["paymentType"]>
     composites: {}
   }
@@ -21853,6 +22007,8 @@ export namespace Prisma {
     readonly amount: FieldRef<"PaymentType", 'Decimal'>
     readonly isMonthly: FieldRef<"PaymentType", 'Boolean'>
     readonly isActive: FieldRef<"PaymentType", 'Boolean'>
+    readonly createdAt: FieldRef<"PaymentType", 'DateTime'>
+    readonly updatedAt: FieldRef<"PaymentType", 'DateTime'>
   }
     
 
@@ -22312,6 +22468,7 @@ export namespace Prisma {
     status: string | null
     notes: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     paymentDate: Date | null
     receiptNumber: string | null
   }
@@ -22325,6 +22482,7 @@ export namespace Prisma {
     status: string | null
     notes: string | null
     createdAt: Date | null
+    updatedAt: Date | null
     paymentDate: Date | null
     receiptNumber: string | null
   }
@@ -22338,6 +22496,7 @@ export namespace Prisma {
     status: number
     notes: number
     createdAt: number
+    updatedAt: number
     paymentDate: number
     receiptNumber: number
     _all: number
@@ -22361,6 +22520,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     paymentDate?: true
     receiptNumber?: true
   }
@@ -22374,6 +22534,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     paymentDate?: true
     receiptNumber?: true
   }
@@ -22387,6 +22548,7 @@ export namespace Prisma {
     status?: true
     notes?: true
     createdAt?: true
+    updatedAt?: true
     paymentDate?: true
     receiptNumber?: true
     _all?: true
@@ -22487,6 +22649,7 @@ export namespace Prisma {
     status: string
     notes: string | null
     createdAt: Date
+    updatedAt: Date
     paymentDate: Date
     receiptNumber: string | null
     _count: PaymentCountAggregateOutputType | null
@@ -22519,6 +22682,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     paymentDate?: boolean
     receiptNumber?: boolean
     paymentType?: boolean | PaymentTypeDefaultArgs<ExtArgs>
@@ -22534,6 +22698,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     paymentDate?: boolean
     receiptNumber?: boolean
     paymentType?: boolean | PaymentTypeDefaultArgs<ExtArgs>
@@ -22549,6 +22714,7 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     paymentDate?: boolean
     receiptNumber?: boolean
     paymentType?: boolean | PaymentTypeDefaultArgs<ExtArgs>
@@ -22564,11 +22730,12 @@ export namespace Prisma {
     status?: boolean
     notes?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
     paymentDate?: boolean
     receiptNumber?: boolean
   }
 
-  export type PaymentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "paymentTypeId" | "amount" | "dueDate" | "status" | "notes" | "createdAt" | "paymentDate" | "receiptNumber", ExtArgs["result"]["payment"]>
+  export type PaymentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "studentId" | "paymentTypeId" | "amount" | "dueDate" | "status" | "notes" | "createdAt" | "updatedAt" | "paymentDate" | "receiptNumber", ExtArgs["result"]["payment"]>
   export type PaymentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     paymentType?: boolean | PaymentTypeDefaultArgs<ExtArgs>
     student?: boolean | UserDataDefaultArgs<ExtArgs>
@@ -22597,6 +22764,7 @@ export namespace Prisma {
       status: string
       notes: string | null
       createdAt: Date
+      updatedAt: Date
       paymentDate: Date
       receiptNumber: string | null
     }, ExtArgs["result"]["payment"]>
@@ -23032,6 +23200,7 @@ export namespace Prisma {
     readonly status: FieldRef<"Payment", 'String'>
     readonly notes: FieldRef<"Payment", 'String'>
     readonly createdAt: FieldRef<"Payment", 'DateTime'>
+    readonly updatedAt: FieldRef<"Payment", 'DateTime'>
     readonly paymentDate: FieldRef<"Payment", 'DateTime'>
     readonly receiptNumber: FieldRef<"Payment", 'String'>
   }
@@ -29763,8 +29932,8 @@ export namespace Prisma {
     maxScore: Decimal
     letterGrade: string
     predicate: string
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: GradeScaleCountAggregateOutputType | null
     _avg: GradeScaleAvgAggregateOutputType | null
     _sum: GradeScaleSumAggregateOutputType | null
@@ -29856,8 +30025,8 @@ export namespace Prisma {
       maxScore: Prisma.Decimal
       letterGrade: string
       predicate: string
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["gradeScale"]>
     composites: {}
   }
@@ -30985,8 +31154,8 @@ export namespace Prisma {
     gradeTypeId: string | null
     isPublished: boolean
     isActive: boolean
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     createdBy: string
     _count: AssignmentCountAggregateOutputType | null
     _avg: AssignmentAvgAggregateOutputType | null
@@ -31166,8 +31335,8 @@ export namespace Prisma {
       gradeTypeId: string | null
       isPublished: boolean
       isActive: boolean
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
       createdBy: string
     }, ExtArgs["result"]["assignment"]>
     composites: {}
@@ -32295,15 +32464,15 @@ export namespace Prisma {
     studentId: string
     attachments: JsonValue | null
     notes: string | null
-    submittedAt: Date
+    submittedAt: Date | null
     isLate: boolean
     score: Decimal | null
     feedback: string | null
     gradedAt: Date | null
     gradedBy: string | null
     status: string
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: AssignmentSubmissionCountAggregateOutputType | null
     _avg: AssignmentSubmissionAvgAggregateOutputType | null
     _sum: AssignmentSubmissionSumAggregateOutputType | null
@@ -32425,15 +32594,15 @@ export namespace Prisma {
       studentId: string
       attachments: Prisma.JsonValue | null
       notes: string | null
-      submittedAt: Date
+      submittedAt: Date | null
       isLate: boolean
       score: Prisma.Decimal | null
       feedback: string | null
       gradedAt: Date | null
       gradedBy: string | null
       status: string
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["assignmentSubmission"]>
     composites: {}
   }
@@ -33462,7 +33631,7 @@ export namespace Prisma {
     isRead: boolean
     link: string | null
     data: JsonValue | null
-    createdAt: Date
+    createdAt: Date | null
     readAt: Date | null
     _count: NotificationCountAggregateOutputType | null
     _min: NotificationMinAggregateOutputType | null
@@ -33568,7 +33737,7 @@ export namespace Prisma {
       isRead: boolean
       link: string | null
       data: Prisma.JsonValue | null
-      createdAt: Date
+      createdAt: Date | null
       readAt: Date | null
     }, ExtArgs["result"]["notification"]>
     composites: {}
@@ -34643,8 +34812,8 @@ export namespace Prisma {
     isPublished: boolean
     startDate: Date | null
     endDate: Date | null
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     userId: string | null
     _count: DashboardContentCountAggregateOutputType | null
     _avg: DashboardContentAvgAggregateOutputType | null
@@ -34761,8 +34930,8 @@ export namespace Prisma {
       isPublished: boolean
       startDate: Date | null
       endDate: Date | null
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
       userId: string | null
     }, ExtArgs["result"]["dashboardContent"]>
     composites: {}
@@ -35819,8 +35988,8 @@ export namespace Prisma {
     isPublished: boolean
     startDate: Date | null
     endDate: Date | null
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     userId: string | null
     _count: AnnouncementCountAggregateOutputType | null
     _min: AnnouncementMinAggregateOutputType | null
@@ -35930,8 +36099,8 @@ export namespace Prisma {
       isPublished: boolean
       startDate: Date | null
       endDate: Date | null
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
       userId: string | null
     }, ExtArgs["result"]["announcement"]>
     composites: {}
@@ -37010,8 +37179,8 @@ export namespace Prisma {
     grade: string | null
     date: Date
     notes: string | null
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: TahfidzRecordCountAggregateOutputType | null
     _avg: TahfidzRecordAvgAggregateOutputType | null
     _sum: TahfidzRecordSumAggregateOutputType | null
@@ -37113,8 +37282,8 @@ export namespace Prisma {
       grade: string | null
       date: Date
       notes: string | null
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["tahfidzRecord"]>
     composites: {}
   }
@@ -38154,8 +38323,8 @@ export namespace Prisma {
     checkoutTime: Date | null
     notes: string | null
     createdBy: string
-    createdAt: Date
-    updatedAt: Date
+    createdAt: Date | null
+    updatedAt: Date | null
     _count: TeacherAttendanceCountAggregateOutputType | null
     _min: TeacherAttendanceMinAggregateOutputType | null
     _max: TeacherAttendanceMaxAggregateOutputType | null
@@ -38186,7 +38355,7 @@ export namespace Prisma {
     createdBy?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["teacherAttendance"]>
 
@@ -38201,7 +38370,7 @@ export namespace Prisma {
     createdBy?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["teacherAttendance"]>
 
@@ -38216,7 +38385,7 @@ export namespace Prisma {
     createdBy?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["teacherAttendance"]>
 
@@ -38235,22 +38404,22 @@ export namespace Prisma {
 
   export type TeacherAttendanceOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "teacherId" | "date" | "status" | "checkinTime" | "checkoutTime" | "notes" | "createdBy" | "createdAt" | "updatedAt", ExtArgs["result"]["teacherAttendance"]>
   export type TeacherAttendanceInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }
   export type TeacherAttendanceIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }
   export type TeacherAttendanceIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    createdByUser?: boolean | UserDataDefaultArgs<ExtArgs>
+    createdByUser?: boolean | TeacherAttendance$createdByUserArgs<ExtArgs>
     teacher?: boolean | UserDataDefaultArgs<ExtArgs>
   }
 
   export type $TeacherAttendancePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "TeacherAttendance"
     objects: {
-      createdByUser: Prisma.$UserDataPayload<ExtArgs>
+      createdByUser: Prisma.$UserDataPayload<ExtArgs> | null
       teacher: Prisma.$UserDataPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
@@ -38262,8 +38431,8 @@ export namespace Prisma {
       checkoutTime: Date | null
       notes: string | null
       createdBy: string
-      createdAt: Date
-      updatedAt: Date
+      createdAt: Date | null
+      updatedAt: Date | null
     }, ExtArgs["result"]["teacherAttendance"]>
     composites: {}
   }
@@ -38658,7 +38827,7 @@ export namespace Prisma {
    */
   export interface Prisma__TeacherAttendanceClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    createdByUser<T extends UserDataDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDataDefaultArgs<ExtArgs>>): Prisma__UserDataClient<$Result.GetResult<Prisma.$UserDataPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    createdByUser<T extends TeacherAttendance$createdByUserArgs<ExtArgs> = {}>(args?: Subset<T, TeacherAttendance$createdByUserArgs<ExtArgs>>): Prisma__UserDataClient<$Result.GetResult<Prisma.$UserDataPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     teacher<T extends UserDataDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDataDefaultArgs<ExtArgs>>): Prisma__UserDataClient<$Result.GetResult<Prisma.$UserDataPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -39095,6 +39264,25 @@ export namespace Prisma {
   }
 
   /**
+   * TeacherAttendance.createdByUser
+   */
+  export type TeacherAttendance$createdByUserArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserData
+     */
+    select?: UserDataSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserData
+     */
+    omit?: UserDataOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserDataInclude<ExtArgs> | null
+    where?: UserDataWhereInput
+  }
+
+  /**
    * TeacherAttendance without action
    */
   export type TeacherAttendanceDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -39229,7 +39417,9 @@ export namespace Prisma {
     name: 'name',
     description: 'description',
     permissions: 'permissions',
-    isActive: 'isActive'
+    isActive: 'isActive',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type RoleScalarFieldEnum = (typeof RoleScalarFieldEnum)[keyof typeof RoleScalarFieldEnum]
@@ -39253,7 +39443,9 @@ export namespace Prisma {
     code: 'code',
     name: 'name',
     description: 'description',
-    isActive: 'isActive'
+    isActive: 'isActive',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type MajorScalarFieldEnum = (typeof MajorScalarFieldEnum)[keyof typeof MajorScalarFieldEnum]
@@ -39279,7 +39471,9 @@ export namespace Prisma {
     description: 'description',
     majorId: 'majorId',
     credits: 'credits',
-    isActive: 'isActive'
+    isActive: 'isActive',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type SubjectScalarFieldEnum = (typeof SubjectScalarFieldEnum)[keyof typeof SubjectScalarFieldEnum]
@@ -39295,7 +39489,9 @@ export namespace Prisma {
     startTime: 'startTime',
     endTime: 'endTime',
     room: 'room',
-    isActive: 'isActive'
+    isActive: 'isActive',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type ScheduleScalarFieldEnum = (typeof ScheduleScalarFieldEnum)[keyof typeof ScheduleScalarFieldEnum]
@@ -39308,6 +39504,7 @@ export namespace Prisma {
     status: 'status',
     notes: 'notes',
     createdAt: 'createdAt',
+    updatedAt: 'updatedAt',
     date: 'date'
   };
 
@@ -39335,6 +39532,7 @@ export namespace Prisma {
     status: 'status',
     reportedBy: 'reportedBy',
     createdAt: 'createdAt',
+    updatedAt: 'updatedAt',
     date: 'date',
     resolutionDate: 'resolutionDate',
     resolutionNotes: 'resolutionNotes'
@@ -39349,7 +39547,9 @@ export namespace Prisma {
     description: 'description',
     amount: 'amount',
     isMonthly: 'isMonthly',
-    isActive: 'isActive'
+    isActive: 'isActive',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type PaymentTypeScalarFieldEnum = (typeof PaymentTypeScalarFieldEnum)[keyof typeof PaymentTypeScalarFieldEnum]
@@ -39364,6 +39564,7 @@ export namespace Prisma {
     status: 'status',
     notes: 'notes',
     createdAt: 'createdAt',
+    updatedAt: 'updatedAt',
     paymentDate: 'paymentDate',
     receiptNumber: 'receiptNumber'
   };
@@ -40299,6 +40500,8 @@ export namespace Prisma {
     description?: StringFilter<"Role"> | string
     permissions?: StringNullableListFilter<"Role">
     isActive?: BoolFilter<"Role"> | boolean
+    createdAt?: DateTimeNullableFilter<"Role"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Role"> | Date | string | null
     userData?: UserDataListRelationFilter
   }
 
@@ -40308,6 +40511,8 @@ export namespace Prisma {
     description?: SortOrder
     permissions?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     userData?: UserDataOrderByRelationAggregateInput
   }
 
@@ -40320,6 +40525,8 @@ export namespace Prisma {
     description?: StringFilter<"Role"> | string
     permissions?: StringNullableListFilter<"Role">
     isActive?: BoolFilter<"Role"> | boolean
+    createdAt?: DateTimeNullableFilter<"Role"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Role"> | Date | string | null
     userData?: UserDataListRelationFilter
   }, "id" | "name">
 
@@ -40329,6 +40536,8 @@ export namespace Prisma {
     description?: SortOrder
     permissions?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: RoleCountOrderByAggregateInput
     _max?: RoleMaxOrderByAggregateInput
     _min?: RoleMinOrderByAggregateInput
@@ -40343,6 +40552,8 @@ export namespace Prisma {
     description?: StringWithAggregatesFilter<"Role"> | string
     permissions?: StringNullableListFilter<"Role">
     isActive?: BoolWithAggregatesFilter<"Role"> | boolean
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Role"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Role"> | Date | string | null
   }
 
   export type AcademicYearWhereInput = {
@@ -40440,6 +40651,8 @@ export namespace Prisma {
     name?: StringFilter<"Major"> | string
     description?: StringNullableFilter<"Major"> | string | null
     isActive?: BoolFilter<"Major"> | boolean
+    createdAt?: DateTimeNullableFilter<"Major"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Major"> | Date | string | null
     classes?: ClassListRelationFilter
     subjects?: SubjectListRelationFilter
     students?: UserDataListRelationFilter
@@ -40451,6 +40664,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrderInput | SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     classes?: ClassOrderByRelationAggregateInput
     subjects?: SubjectOrderByRelationAggregateInput
     students?: UserDataOrderByRelationAggregateInput
@@ -40465,6 +40680,8 @@ export namespace Prisma {
     name?: StringFilter<"Major"> | string
     description?: StringNullableFilter<"Major"> | string | null
     isActive?: BoolFilter<"Major"> | boolean
+    createdAt?: DateTimeNullableFilter<"Major"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Major"> | Date | string | null
     classes?: ClassListRelationFilter
     subjects?: SubjectListRelationFilter
     students?: UserDataListRelationFilter
@@ -40476,6 +40693,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrderInput | SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: MajorCountOrderByAggregateInput
     _max?: MajorMaxOrderByAggregateInput
     _min?: MajorMinOrderByAggregateInput
@@ -40490,6 +40709,8 @@ export namespace Prisma {
     name?: StringWithAggregatesFilter<"Major"> | string
     description?: StringNullableWithAggregatesFilter<"Major"> | string | null
     isActive?: BoolWithAggregatesFilter<"Major"> | boolean
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Major"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Major"> | Date | string | null
   }
 
   export type ClassWhereInput = {
@@ -40592,6 +40813,8 @@ export namespace Prisma {
     majorId?: StringNullableFilter<"Subject"> | string | null
     credits?: IntFilter<"Subject"> | number
     isActive?: BoolFilter<"Subject"> | boolean
+    createdAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
     assignments?: AssignmentListRelationFilter
     gradeConfigurations?: GradeConfigurationListRelationFilter
     grades?: GradeListRelationFilter
@@ -40608,6 +40831,8 @@ export namespace Prisma {
     majorId?: SortOrderInput | SortOrder
     credits?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     assignments?: AssignmentOrderByRelationAggregateInput
     gradeConfigurations?: GradeConfigurationOrderByRelationAggregateInput
     grades?: GradeOrderByRelationAggregateInput
@@ -40627,6 +40852,8 @@ export namespace Prisma {
     majorId?: StringNullableFilter<"Subject"> | string | null
     credits?: IntFilter<"Subject"> | number
     isActive?: BoolFilter<"Subject"> | boolean
+    createdAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
     assignments?: AssignmentListRelationFilter
     gradeConfigurations?: GradeConfigurationListRelationFilter
     grades?: GradeListRelationFilter
@@ -40643,6 +40870,8 @@ export namespace Prisma {
     majorId?: SortOrderInput | SortOrder
     credits?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: SubjectCountOrderByAggregateInput
     _avg?: SubjectAvgOrderByAggregateInput
     _max?: SubjectMaxOrderByAggregateInput
@@ -40661,6 +40890,8 @@ export namespace Prisma {
     majorId?: StringNullableWithAggregatesFilter<"Subject"> | string | null
     credits?: IntWithAggregatesFilter<"Subject"> | number
     isActive?: BoolWithAggregatesFilter<"Subject"> | boolean
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Subject"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Subject"> | Date | string | null
   }
 
   export type ScheduleWhereInput = {
@@ -40677,6 +40908,8 @@ export namespace Prisma {
     endTime?: StringFilter<"Schedule"> | string
     room?: StringNullableFilter<"Schedule"> | string | null
     isActive?: BoolFilter<"Schedule"> | boolean
+    createdAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
     assignments?: AssignmentListRelationFilter
     attendances?: AttendanceListRelationFilter
     grades?: GradeListRelationFilter
@@ -40697,6 +40930,8 @@ export namespace Prisma {
     endTime?: SortOrder
     room?: SortOrderInput | SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     assignments?: AssignmentOrderByRelationAggregateInput
     attendances?: AttendanceOrderByRelationAggregateInput
     grades?: GradeOrderByRelationAggregateInput
@@ -40721,6 +40956,8 @@ export namespace Prisma {
     endTime?: StringFilter<"Schedule"> | string
     room?: StringNullableFilter<"Schedule"> | string | null
     isActive?: BoolFilter<"Schedule"> | boolean
+    createdAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
     assignments?: AssignmentListRelationFilter
     attendances?: AttendanceListRelationFilter
     grades?: GradeListRelationFilter
@@ -40741,6 +40978,8 @@ export namespace Prisma {
     endTime?: SortOrder
     room?: SortOrderInput | SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: ScheduleCountOrderByAggregateInput
     _avg?: ScheduleAvgOrderByAggregateInput
     _max?: ScheduleMaxOrderByAggregateInput
@@ -40762,6 +41001,8 @@ export namespace Prisma {
     endTime?: StringWithAggregatesFilter<"Schedule"> | string
     room?: StringNullableWithAggregatesFilter<"Schedule"> | string | null
     isActive?: BoolWithAggregatesFilter<"Schedule"> | boolean
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Schedule"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Schedule"> | Date | string | null
   }
 
   export type AttendanceWhereInput = {
@@ -40774,6 +41015,7 @@ export namespace Prisma {
     status?: StringFilter<"Attendance"> | string
     notes?: StringNullableFilter<"Attendance"> | string | null
     createdAt?: DateTimeFilter<"Attendance"> | Date | string
+    updatedAt?: DateTimeFilter<"Attendance"> | Date | string
     date?: DateTimeFilter<"Attendance"> | Date | string
     schedule?: XOR<ScheduleScalarRelationFilter, ScheduleWhereInput>
     student?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
@@ -40786,6 +41028,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrderInput | SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     schedule?: ScheduleOrderByWithRelationInput
     student?: UserDataOrderByWithRelationInput
@@ -40802,6 +41045,7 @@ export namespace Prisma {
     status?: StringFilter<"Attendance"> | string
     notes?: StringNullableFilter<"Attendance"> | string | null
     createdAt?: DateTimeFilter<"Attendance"> | Date | string
+    updatedAt?: DateTimeFilter<"Attendance"> | Date | string
     date?: DateTimeFilter<"Attendance"> | Date | string
     schedule?: XOR<ScheduleScalarRelationFilter, ScheduleWhereInput>
     student?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
@@ -40814,6 +41058,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrderInput | SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     _count?: AttendanceCountOrderByAggregateInput
     _max?: AttendanceMaxOrderByAggregateInput
@@ -40830,6 +41075,7 @@ export namespace Prisma {
     status?: StringWithAggregatesFilter<"Attendance"> | string
     notes?: StringNullableWithAggregatesFilter<"Attendance"> | string | null
     createdAt?: DateTimeWithAggregatesFilter<"Attendance"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Attendance"> | Date | string
     date?: DateTimeWithAggregatesFilter<"Attendance"> | Date | string
   }
 
@@ -40910,6 +41156,7 @@ export namespace Prisma {
     status?: StringFilter<"Violation"> | string
     reportedBy?: StringFilter<"Violation"> | string
     createdAt?: DateTimeFilter<"Violation"> | Date | string
+    updatedAt?: DateTimeFilter<"Violation"> | Date | string
     date?: DateTimeFilter<"Violation"> | Date | string
     resolutionDate?: DateTimeNullableFilter<"Violation"> | Date | string | null
     resolutionNotes?: StringNullableFilter<"Violation"> | string | null
@@ -40927,6 +41174,7 @@ export namespace Prisma {
     status?: SortOrder
     reportedBy?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     resolutionDate?: SortOrderInput | SortOrder
     resolutionNotes?: SortOrderInput | SortOrder
@@ -40947,6 +41195,7 @@ export namespace Prisma {
     status?: StringFilter<"Violation"> | string
     reportedBy?: StringFilter<"Violation"> | string
     createdAt?: DateTimeFilter<"Violation"> | Date | string
+    updatedAt?: DateTimeFilter<"Violation"> | Date | string
     date?: DateTimeFilter<"Violation"> | Date | string
     resolutionDate?: DateTimeNullableFilter<"Violation"> | Date | string | null
     resolutionNotes?: StringNullableFilter<"Violation"> | string | null
@@ -40964,6 +41213,7 @@ export namespace Prisma {
     status?: SortOrder
     reportedBy?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     resolutionDate?: SortOrderInput | SortOrder
     resolutionNotes?: SortOrderInput | SortOrder
@@ -40984,6 +41234,7 @@ export namespace Prisma {
     status?: StringWithAggregatesFilter<"Violation"> | string
     reportedBy?: StringWithAggregatesFilter<"Violation"> | string
     createdAt?: DateTimeWithAggregatesFilter<"Violation"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Violation"> | Date | string
     date?: DateTimeWithAggregatesFilter<"Violation"> | Date | string
     resolutionDate?: DateTimeNullableWithAggregatesFilter<"Violation"> | Date | string | null
     resolutionNotes?: StringNullableWithAggregatesFilter<"Violation"> | string | null
@@ -40999,6 +41250,8 @@ export namespace Prisma {
     amount?: DecimalFilter<"PaymentType"> | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFilter<"PaymentType"> | boolean
     isActive?: BoolFilter<"PaymentType"> | boolean
+    createdAt?: DateTimeNullableFilter<"PaymentType"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"PaymentType"> | Date | string | null
     payments?: PaymentListRelationFilter
   }
 
@@ -41009,6 +41262,8 @@ export namespace Prisma {
     amount?: SortOrder
     isMonthly?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     payments?: PaymentOrderByRelationAggregateInput
   }
 
@@ -41022,6 +41277,8 @@ export namespace Prisma {
     amount?: DecimalFilter<"PaymentType"> | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFilter<"PaymentType"> | boolean
     isActive?: BoolFilter<"PaymentType"> | boolean
+    createdAt?: DateTimeNullableFilter<"PaymentType"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"PaymentType"> | Date | string | null
     payments?: PaymentListRelationFilter
   }, "id" | "name">
 
@@ -41032,6 +41289,8 @@ export namespace Prisma {
     amount?: SortOrder
     isMonthly?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: PaymentTypeCountOrderByAggregateInput
     _avg?: PaymentTypeAvgOrderByAggregateInput
     _max?: PaymentTypeMaxOrderByAggregateInput
@@ -41049,6 +41308,8 @@ export namespace Prisma {
     amount?: DecimalWithAggregatesFilter<"PaymentType"> | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolWithAggregatesFilter<"PaymentType"> | boolean
     isActive?: BoolWithAggregatesFilter<"PaymentType"> | boolean
+    createdAt?: DateTimeNullableWithAggregatesFilter<"PaymentType"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"PaymentType"> | Date | string | null
   }
 
   export type PaymentWhereInput = {
@@ -41063,6 +41324,7 @@ export namespace Prisma {
     status?: StringFilter<"Payment"> | string
     notes?: StringNullableFilter<"Payment"> | string | null
     createdAt?: DateTimeFilter<"Payment"> | Date | string
+    updatedAt?: DateTimeFilter<"Payment"> | Date | string
     paymentDate?: DateTimeFilter<"Payment"> | Date | string
     receiptNumber?: StringNullableFilter<"Payment"> | string | null
     paymentType?: XOR<PaymentTypeScalarRelationFilter, PaymentTypeWhereInput>
@@ -41078,6 +41340,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrderInput | SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     paymentDate?: SortOrder
     receiptNumber?: SortOrderInput | SortOrder
     paymentType?: PaymentTypeOrderByWithRelationInput
@@ -41096,6 +41359,7 @@ export namespace Prisma {
     status?: StringFilter<"Payment"> | string
     notes?: StringNullableFilter<"Payment"> | string | null
     createdAt?: DateTimeFilter<"Payment"> | Date | string
+    updatedAt?: DateTimeFilter<"Payment"> | Date | string
     paymentDate?: DateTimeFilter<"Payment"> | Date | string
     receiptNumber?: StringNullableFilter<"Payment"> | string | null
     paymentType?: XOR<PaymentTypeScalarRelationFilter, PaymentTypeWhereInput>
@@ -41111,6 +41375,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrderInput | SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     paymentDate?: SortOrder
     receiptNumber?: SortOrderInput | SortOrder
     _count?: PaymentCountOrderByAggregateInput
@@ -41132,6 +41397,7 @@ export namespace Prisma {
     status?: StringWithAggregatesFilter<"Payment"> | string
     notes?: StringNullableWithAggregatesFilter<"Payment"> | string | null
     createdAt?: DateTimeWithAggregatesFilter<"Payment"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Payment"> | Date | string
     paymentDate?: DateTimeWithAggregatesFilter<"Payment"> | Date | string
     receiptNumber?: StringNullableWithAggregatesFilter<"Payment"> | string | null
   }
@@ -41649,8 +41915,8 @@ export namespace Prisma {
     maxScore?: DecimalFilter<"GradeScale"> | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFilter<"GradeScale"> | string
     predicate?: StringFilter<"GradeScale"> | string
-    createdAt?: DateTimeFilter<"GradeScale"> | Date | string
-    updatedAt?: DateTimeFilter<"GradeScale"> | Date | string
+    createdAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
     academicYear?: XOR<AcademicYearNullableScalarRelationFilter, AcademicYearWhereInput> | null
   }
 
@@ -41661,8 +41927,8 @@ export namespace Prisma {
     maxScore?: SortOrder
     letterGrade?: SortOrder
     predicate?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     academicYear?: AcademicYearOrderByWithRelationInput
   }
 
@@ -41676,8 +41942,8 @@ export namespace Prisma {
     maxScore?: DecimalFilter<"GradeScale"> | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFilter<"GradeScale"> | string
     predicate?: StringFilter<"GradeScale"> | string
-    createdAt?: DateTimeFilter<"GradeScale"> | Date | string
-    updatedAt?: DateTimeFilter<"GradeScale"> | Date | string
+    createdAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
     academicYear?: XOR<AcademicYearNullableScalarRelationFilter, AcademicYearWhereInput> | null
   }, "id">
 
@@ -41688,8 +41954,8 @@ export namespace Prisma {
     maxScore?: SortOrder
     letterGrade?: SortOrder
     predicate?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: GradeScaleCountOrderByAggregateInput
     _avg?: GradeScaleAvgOrderByAggregateInput
     _max?: GradeScaleMaxOrderByAggregateInput
@@ -41707,8 +41973,8 @@ export namespace Prisma {
     maxScore?: DecimalWithAggregatesFilter<"GradeScale"> | Decimal | DecimalJsLike | number | string
     letterGrade?: StringWithAggregatesFilter<"GradeScale"> | string
     predicate?: StringWithAggregatesFilter<"GradeScale"> | string
-    createdAt?: DateTimeWithAggregatesFilter<"GradeScale"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"GradeScale"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"GradeScale"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"GradeScale"> | Date | string | null
   }
 
   export type AssignmentWhereInput = {
@@ -41731,8 +41997,8 @@ export namespace Prisma {
     gradeTypeId?: StringNullableFilter<"Assignment"> | string | null
     isPublished?: BoolFilter<"Assignment"> | boolean
     isActive?: BoolFilter<"Assignment"> | boolean
-    createdAt?: DateTimeFilter<"Assignment"> | Date | string
-    updatedAt?: DateTimeFilter<"Assignment"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
     createdBy?: StringFilter<"Assignment"> | string
     submissions?: AssignmentSubmissionListRelationFilter
     class?: XOR<ClassScalarRelationFilter, ClassWhereInput>
@@ -41759,8 +42025,8 @@ export namespace Prisma {
     gradeTypeId?: SortOrderInput | SortOrder
     isPublished?: SortOrder
     isActive?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     createdBy?: SortOrder
     submissions?: AssignmentSubmissionOrderByRelationAggregateInput
     class?: ClassOrderByWithRelationInput
@@ -41790,8 +42056,8 @@ export namespace Prisma {
     gradeTypeId?: StringNullableFilter<"Assignment"> | string | null
     isPublished?: BoolFilter<"Assignment"> | boolean
     isActive?: BoolFilter<"Assignment"> | boolean
-    createdAt?: DateTimeFilter<"Assignment"> | Date | string
-    updatedAt?: DateTimeFilter<"Assignment"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
     createdBy?: StringFilter<"Assignment"> | string
     submissions?: AssignmentSubmissionListRelationFilter
     class?: XOR<ClassScalarRelationFilter, ClassWhereInput>
@@ -41818,8 +42084,8 @@ export namespace Prisma {
     gradeTypeId?: SortOrderInput | SortOrder
     isPublished?: SortOrder
     isActive?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     createdBy?: SortOrder
     _count?: AssignmentCountOrderByAggregateInput
     _avg?: AssignmentAvgOrderByAggregateInput
@@ -41848,8 +42114,8 @@ export namespace Prisma {
     gradeTypeId?: StringNullableWithAggregatesFilter<"Assignment"> | string | null
     isPublished?: BoolWithAggregatesFilter<"Assignment"> | boolean
     isActive?: BoolWithAggregatesFilter<"Assignment"> | boolean
-    createdAt?: DateTimeWithAggregatesFilter<"Assignment"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"Assignment"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Assignment"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Assignment"> | Date | string | null
     createdBy?: StringWithAggregatesFilter<"Assignment"> | string
   }
 
@@ -41862,15 +42128,15 @@ export namespace Prisma {
     studentId?: StringFilter<"AssignmentSubmission"> | string
     attachments?: JsonNullableFilter<"AssignmentSubmission">
     notes?: StringNullableFilter<"AssignmentSubmission"> | string | null
-    submittedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    submittedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     isLate?: BoolFilter<"AssignmentSubmission"> | boolean
     score?: DecimalNullableFilter<"AssignmentSubmission"> | Decimal | DecimalJsLike | number | string | null
     feedback?: StringNullableFilter<"AssignmentSubmission"> | string | null
     gradedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     gradedBy?: StringNullableFilter<"AssignmentSubmission"> | string | null
     status?: StringFilter<"AssignmentSubmission"> | string
-    createdAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
-    updatedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    createdAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     assignment?: XOR<AssignmentScalarRelationFilter, AssignmentWhereInput>
     student?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }
@@ -41881,15 +42147,15 @@ export namespace Prisma {
     studentId?: SortOrder
     attachments?: SortOrderInput | SortOrder
     notes?: SortOrderInput | SortOrder
-    submittedAt?: SortOrder
+    submittedAt?: SortOrderInput | SortOrder
     isLate?: SortOrder
     score?: SortOrderInput | SortOrder
     feedback?: SortOrderInput | SortOrder
     gradedAt?: SortOrderInput | SortOrder
     gradedBy?: SortOrderInput | SortOrder
     status?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     assignment?: AssignmentOrderByWithRelationInput
     student?: UserDataOrderByWithRelationInput
   }
@@ -41904,15 +42170,15 @@ export namespace Prisma {
     studentId?: StringFilter<"AssignmentSubmission"> | string
     attachments?: JsonNullableFilter<"AssignmentSubmission">
     notes?: StringNullableFilter<"AssignmentSubmission"> | string | null
-    submittedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    submittedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     isLate?: BoolFilter<"AssignmentSubmission"> | boolean
     score?: DecimalNullableFilter<"AssignmentSubmission"> | Decimal | DecimalJsLike | number | string | null
     feedback?: StringNullableFilter<"AssignmentSubmission"> | string | null
     gradedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     gradedBy?: StringNullableFilter<"AssignmentSubmission"> | string | null
     status?: StringFilter<"AssignmentSubmission"> | string
-    createdAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
-    updatedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    createdAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     assignment?: XOR<AssignmentScalarRelationFilter, AssignmentWhereInput>
     student?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }, "id" | "assignmentId_studentId">
@@ -41923,15 +42189,15 @@ export namespace Prisma {
     studentId?: SortOrder
     attachments?: SortOrderInput | SortOrder
     notes?: SortOrderInput | SortOrder
-    submittedAt?: SortOrder
+    submittedAt?: SortOrderInput | SortOrder
     isLate?: SortOrder
     score?: SortOrderInput | SortOrder
     feedback?: SortOrderInput | SortOrder
     gradedAt?: SortOrderInput | SortOrder
     gradedBy?: SortOrderInput | SortOrder
     status?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: AssignmentSubmissionCountOrderByAggregateInput
     _avg?: AssignmentSubmissionAvgOrderByAggregateInput
     _max?: AssignmentSubmissionMaxOrderByAggregateInput
@@ -41948,15 +42214,15 @@ export namespace Prisma {
     studentId?: StringWithAggregatesFilter<"AssignmentSubmission"> | string
     attachments?: JsonNullableWithAggregatesFilter<"AssignmentSubmission">
     notes?: StringNullableWithAggregatesFilter<"AssignmentSubmission"> | string | null
-    submittedAt?: DateTimeWithAggregatesFilter<"AssignmentSubmission"> | Date | string
+    submittedAt?: DateTimeNullableWithAggregatesFilter<"AssignmentSubmission"> | Date | string | null
     isLate?: BoolWithAggregatesFilter<"AssignmentSubmission"> | boolean
     score?: DecimalNullableWithAggregatesFilter<"AssignmentSubmission"> | Decimal | DecimalJsLike | number | string | null
     feedback?: StringNullableWithAggregatesFilter<"AssignmentSubmission"> | string | null
     gradedAt?: DateTimeNullableWithAggregatesFilter<"AssignmentSubmission"> | Date | string | null
     gradedBy?: StringNullableWithAggregatesFilter<"AssignmentSubmission"> | string | null
     status?: StringWithAggregatesFilter<"AssignmentSubmission"> | string
-    createdAt?: DateTimeWithAggregatesFilter<"AssignmentSubmission"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"AssignmentSubmission"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"AssignmentSubmission"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"AssignmentSubmission"> | Date | string | null
   }
 
   export type NotificationWhereInput = {
@@ -41972,7 +42238,7 @@ export namespace Prisma {
     isRead?: BoolFilter<"Notification"> | boolean
     link?: StringNullableFilter<"Notification"> | string | null
     data?: JsonNullableFilter<"Notification">
-    createdAt?: DateTimeFilter<"Notification"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
     readAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
     user?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }
@@ -41987,7 +42253,7 @@ export namespace Prisma {
     isRead?: SortOrder
     link?: SortOrderInput | SortOrder
     data?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
     readAt?: SortOrderInput | SortOrder
     user?: UserDataOrderByWithRelationInput
   }
@@ -42005,7 +42271,7 @@ export namespace Prisma {
     isRead?: BoolFilter<"Notification"> | boolean
     link?: StringNullableFilter<"Notification"> | string | null
     data?: JsonNullableFilter<"Notification">
-    createdAt?: DateTimeFilter<"Notification"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
     readAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
     user?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }, "id">
@@ -42020,7 +42286,7 @@ export namespace Prisma {
     isRead?: SortOrder
     link?: SortOrderInput | SortOrder
     data?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
     readAt?: SortOrderInput | SortOrder
     _count?: NotificationCountOrderByAggregateInput
     _max?: NotificationMaxOrderByAggregateInput
@@ -42040,7 +42306,7 @@ export namespace Prisma {
     isRead?: BoolWithAggregatesFilter<"Notification"> | boolean
     link?: StringNullableWithAggregatesFilter<"Notification"> | string | null
     data?: JsonNullableWithAggregatesFilter<"Notification">
-    createdAt?: DateTimeWithAggregatesFilter<"Notification"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Notification"> | Date | string | null
     readAt?: DateTimeNullableWithAggregatesFilter<"Notification"> | Date | string | null
   }
 
@@ -42058,8 +42324,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"DashboardContent"> | boolean
     startDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     endDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
-    createdAt?: DateTimeFilter<"DashboardContent"> | Date | string
-    updatedAt?: DateTimeFilter<"DashboardContent"> | Date | string
+    createdAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     userId?: StringNullableFilter<"DashboardContent"> | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }
@@ -42075,8 +42341,8 @@ export namespace Prisma {
     isPublished?: SortOrder
     startDate?: SortOrderInput | SortOrder
     endDate?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     userId?: SortOrderInput | SortOrder
     user?: UserDataOrderByWithRelationInput
   }
@@ -42095,8 +42361,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"DashboardContent"> | boolean
     startDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     endDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
-    createdAt?: DateTimeFilter<"DashboardContent"> | Date | string
-    updatedAt?: DateTimeFilter<"DashboardContent"> | Date | string
+    createdAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     userId?: StringNullableFilter<"DashboardContent"> | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }, "id">
@@ -42112,8 +42378,8 @@ export namespace Prisma {
     isPublished?: SortOrder
     startDate?: SortOrderInput | SortOrder
     endDate?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     userId?: SortOrderInput | SortOrder
     _count?: DashboardContentCountOrderByAggregateInput
     _avg?: DashboardContentAvgOrderByAggregateInput
@@ -42136,8 +42402,8 @@ export namespace Prisma {
     isPublished?: BoolWithAggregatesFilter<"DashboardContent"> | boolean
     startDate?: DateTimeNullableWithAggregatesFilter<"DashboardContent"> | Date | string | null
     endDate?: DateTimeNullableWithAggregatesFilter<"DashboardContent"> | Date | string | null
-    createdAt?: DateTimeWithAggregatesFilter<"DashboardContent"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"DashboardContent"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"DashboardContent"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"DashboardContent"> | Date | string | null
     userId?: StringNullableWithAggregatesFilter<"DashboardContent"> | string | null
   }
 
@@ -42154,8 +42420,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"Announcement"> | boolean
     startDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     endDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
-    createdAt?: DateTimeFilter<"Announcement"> | Date | string
-    updatedAt?: DateTimeFilter<"Announcement"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     userId?: StringNullableFilter<"Announcement"> | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }
@@ -42170,8 +42436,8 @@ export namespace Prisma {
     isPublished?: SortOrder
     startDate?: SortOrderInput | SortOrder
     endDate?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     userId?: SortOrderInput | SortOrder
     user?: UserDataOrderByWithRelationInput
   }
@@ -42189,8 +42455,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"Announcement"> | boolean
     startDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     endDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
-    createdAt?: DateTimeFilter<"Announcement"> | Date | string
-    updatedAt?: DateTimeFilter<"Announcement"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     userId?: StringNullableFilter<"Announcement"> | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }, "id">
@@ -42205,8 +42471,8 @@ export namespace Prisma {
     isPublished?: SortOrder
     startDate?: SortOrderInput | SortOrder
     endDate?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     userId?: SortOrderInput | SortOrder
     _count?: AnnouncementCountOrderByAggregateInput
     _max?: AnnouncementMaxOrderByAggregateInput
@@ -42226,8 +42492,8 @@ export namespace Prisma {
     isPublished?: BoolWithAggregatesFilter<"Announcement"> | boolean
     startDate?: DateTimeNullableWithAggregatesFilter<"Announcement"> | Date | string | null
     endDate?: DateTimeNullableWithAggregatesFilter<"Announcement"> | Date | string | null
-    createdAt?: DateTimeWithAggregatesFilter<"Announcement"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"Announcement"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"Announcement"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"Announcement"> | Date | string | null
     userId?: StringNullableWithAggregatesFilter<"Announcement"> | string | null
   }
 
@@ -42243,8 +42509,8 @@ export namespace Prisma {
     grade?: StringNullableFilter<"TahfidzRecord"> | string | null
     date?: DateTimeFilter<"TahfidzRecord"> | Date | string
     notes?: StringNullableFilter<"TahfidzRecord"> | string | null
-    createdAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
-    updatedAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
+    createdAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }
 
@@ -42257,8 +42523,8 @@ export namespace Prisma {
     grade?: SortOrderInput | SortOrder
     date?: SortOrder
     notes?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     user?: UserDataOrderByWithRelationInput
   }
 
@@ -42274,8 +42540,8 @@ export namespace Prisma {
     grade?: StringNullableFilter<"TahfidzRecord"> | string | null
     date?: DateTimeFilter<"TahfidzRecord"> | Date | string
     notes?: StringNullableFilter<"TahfidzRecord"> | string | null
-    createdAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
-    updatedAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
+    createdAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
     user?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
   }, "id">
 
@@ -42288,8 +42554,8 @@ export namespace Prisma {
     grade?: SortOrderInput | SortOrder
     date?: SortOrder
     notes?: SortOrderInput | SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: TahfidzRecordCountOrderByAggregateInput
     _avg?: TahfidzRecordAvgOrderByAggregateInput
     _max?: TahfidzRecordMaxOrderByAggregateInput
@@ -42309,8 +42575,8 @@ export namespace Prisma {
     grade?: StringNullableWithAggregatesFilter<"TahfidzRecord"> | string | null
     date?: DateTimeWithAggregatesFilter<"TahfidzRecord"> | Date | string
     notes?: StringNullableWithAggregatesFilter<"TahfidzRecord"> | string | null
-    createdAt?: DateTimeWithAggregatesFilter<"TahfidzRecord"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"TahfidzRecord"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"TahfidzRecord"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"TahfidzRecord"> | Date | string | null
   }
 
   export type TeacherAttendanceWhereInput = {
@@ -42325,9 +42591,9 @@ export namespace Prisma {
     checkoutTime?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
     notes?: StringNullableFilter<"TeacherAttendance"> | string | null
     createdBy?: StringFilter<"TeacherAttendance"> | string
-    createdAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
-    updatedAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
-    createdByUser?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
+    createdAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
+    createdByUser?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
     teacher?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }
 
@@ -42340,8 +42606,8 @@ export namespace Prisma {
     checkoutTime?: SortOrderInput | SortOrder
     notes?: SortOrderInput | SortOrder
     createdBy?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     createdByUser?: UserDataOrderByWithRelationInput
     teacher?: UserDataOrderByWithRelationInput
   }
@@ -42359,9 +42625,9 @@ export namespace Prisma {
     checkoutTime?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
     notes?: StringNullableFilter<"TeacherAttendance"> | string | null
     createdBy?: StringFilter<"TeacherAttendance"> | string
-    createdAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
-    updatedAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
-    createdByUser?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
+    createdAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
+    createdByUser?: XOR<UserDataNullableScalarRelationFilter, UserDataWhereInput> | null
     teacher?: XOR<UserDataScalarRelationFilter, UserDataWhereInput>
   }, "id" | "teacherId_date">
 
@@ -42374,8 +42640,8 @@ export namespace Prisma {
     checkoutTime?: SortOrderInput | SortOrder
     notes?: SortOrderInput | SortOrder
     createdBy?: SortOrder
-    createdAt?: SortOrder
-    updatedAt?: SortOrder
+    createdAt?: SortOrderInput | SortOrder
+    updatedAt?: SortOrderInput | SortOrder
     _count?: TeacherAttendanceCountOrderByAggregateInput
     _max?: TeacherAttendanceMaxOrderByAggregateInput
     _min?: TeacherAttendanceMinOrderByAggregateInput
@@ -42393,8 +42659,8 @@ export namespace Prisma {
     checkoutTime?: DateTimeNullableWithAggregatesFilter<"TeacherAttendance"> | Date | string | null
     notes?: StringNullableWithAggregatesFilter<"TeacherAttendance"> | string | null
     createdBy?: StringWithAggregatesFilter<"TeacherAttendance"> | string
-    createdAt?: DateTimeWithAggregatesFilter<"TeacherAttendance"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"TeacherAttendance"> | Date | string
+    createdAt?: DateTimeNullableWithAggregatesFilter<"TeacherAttendance"> | Date | string | null
+    updatedAt?: DateTimeNullableWithAggregatesFilter<"TeacherAttendance"> | Date | string | null
   }
 
   export type UserCreateInput = {
@@ -43038,6 +43304,8 @@ export namespace Prisma {
     description: string
     permissions?: RoleCreatepermissionsInput | string[]
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userData?: UserDataCreateNestedManyWithoutRoleInput
   }
 
@@ -43047,6 +43315,8 @@ export namespace Prisma {
     description: string
     permissions?: RoleCreatepermissionsInput | string[]
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userData?: UserDataUncheckedCreateNestedManyWithoutRoleInput
   }
 
@@ -43056,6 +43326,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userData?: UserDataUpdateManyWithoutRoleNestedInput
   }
 
@@ -43065,6 +43337,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userData?: UserDataUncheckedUpdateManyWithoutRoleNestedInput
   }
 
@@ -43074,6 +43348,8 @@ export namespace Prisma {
     description: string
     permissions?: RoleCreatepermissionsInput | string[]
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type RoleUpdateManyMutationInput = {
@@ -43082,6 +43358,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type RoleUncheckedUpdateManyInput = {
@@ -43090,6 +43368,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AcademicYearCreateInput = {
@@ -43200,6 +43480,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassCreateNestedManyWithoutMajorInput
     subjects?: SubjectCreateNestedManyWithoutMajorInput
     students?: UserDataCreateNestedManyWithoutMajorInput
@@ -43211,6 +43493,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassUncheckedCreateNestedManyWithoutMajorInput
     subjects?: SubjectUncheckedCreateNestedManyWithoutMajorInput
     students?: UserDataUncheckedCreateNestedManyWithoutMajorInput
@@ -43222,6 +43506,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUpdateManyWithoutMajorNestedInput
     subjects?: SubjectUpdateManyWithoutMajorNestedInput
     students?: UserDataUpdateManyWithoutMajorNestedInput
@@ -43233,6 +43519,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUncheckedUpdateManyWithoutMajorNestedInput
     subjects?: SubjectUncheckedUpdateManyWithoutMajorNestedInput
     students?: UserDataUncheckedUpdateManyWithoutMajorNestedInput
@@ -43244,6 +43532,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type MajorUpdateManyMutationInput = {
@@ -43252,6 +43542,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type MajorUncheckedUpdateManyInput = {
@@ -43260,6 +43552,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type ClassCreateInput = {
@@ -43361,6 +43655,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
@@ -43377,6 +43673,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
@@ -43391,6 +43689,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
@@ -43407,6 +43707,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
@@ -43422,6 +43724,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type SubjectUpdateManyMutationInput = {
@@ -43431,6 +43735,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type SubjectUncheckedUpdateManyInput = {
@@ -43441,6 +43747,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type ScheduleCreateInput = {
@@ -43450,6 +43758,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
@@ -43470,6 +43780,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
@@ -43482,6 +43794,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
@@ -43502,6 +43816,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
@@ -43518,6 +43834,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type ScheduleUpdateManyMutationInput = {
@@ -43527,6 +43845,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type ScheduleUncheckedUpdateManyInput = {
@@ -43540,6 +43860,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AttendanceCreateInput = {
@@ -43547,6 +43869,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     schedule: ScheduleCreateNestedOneWithoutAttendancesInput
     student: UserDataCreateNestedOneWithoutAttendancesInput
@@ -43559,6 +43882,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -43567,6 +43891,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     schedule?: ScheduleUpdateOneRequiredWithoutAttendancesNestedInput
     student?: UserDataUpdateOneRequiredWithoutAttendancesNestedInput
@@ -43579,6 +43904,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -43589,6 +43915,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -43597,6 +43924,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -43607,6 +43935,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -43682,6 +44011,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -43699,6 +44029,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -43710,6 +44041,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43727,6 +44059,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43741,6 +44074,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -43752,6 +44086,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43766,6 +44101,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -43778,6 +44114,8 @@ export namespace Prisma {
     amount: Decimal | DecimalJsLike | number | string
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     payments?: PaymentCreateNestedManyWithoutPaymentTypeInput
   }
 
@@ -43788,6 +44126,8 @@ export namespace Prisma {
     amount: Decimal | DecimalJsLike | number | string
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     payments?: PaymentUncheckedCreateNestedManyWithoutPaymentTypeInput
   }
 
@@ -43798,6 +44138,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     payments?: PaymentUpdateManyWithoutPaymentTypeNestedInput
   }
 
@@ -43808,6 +44150,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     payments?: PaymentUncheckedUpdateManyWithoutPaymentTypeNestedInput
   }
 
@@ -43818,6 +44162,8 @@ export namespace Prisma {
     amount: Decimal | DecimalJsLike | number | string
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type PaymentTypeUpdateManyMutationInput = {
@@ -43827,6 +44173,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type PaymentTypeUncheckedUpdateManyInput = {
@@ -43836,6 +44184,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type PaymentCreateInput = {
@@ -43845,6 +44195,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
     paymentType: PaymentTypeCreateNestedOneWithoutPaymentsInput
@@ -43860,6 +44211,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -43871,6 +44223,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
     paymentType?: PaymentTypeUpdateOneRequiredWithoutPaymentsNestedInput
@@ -43886,6 +44239,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -43899,6 +44253,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -43910,6 +44265,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -43923,6 +44279,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -44471,8 +44828,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     academicYear?: AcademicYearCreateNestedOneWithoutGradeScalesInput
   }
 
@@ -44483,8 +44840,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type GradeScaleUpdateInput = {
@@ -44493,8 +44850,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     academicYear?: AcademicYearUpdateOneWithoutGradeScalesNestedInput
   }
 
@@ -44505,8 +44862,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type GradeScaleCreateManyInput = {
@@ -44516,8 +44873,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type GradeScaleUpdateManyMutationInput = {
@@ -44526,8 +44883,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type GradeScaleUncheckedUpdateManyInput = {
@@ -44537,8 +44894,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentCreateInput = {
@@ -44553,8 +44910,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     class: ClassCreateNestedOneWithoutAssignmentsInput
@@ -44581,8 +44938,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -44599,8 +44956,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
@@ -44627,8 +44984,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -44650,8 +45007,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -44667,8 +45024,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -44689,8 +45046,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -44698,15 +45055,15 @@ export namespace Prisma {
     id?: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignment: AssignmentCreateNestedOneWithoutSubmissionsInput
     student: UserDataCreateNestedOneWithoutStudentSubmissionsInput
   }
@@ -44717,30 +45074,30 @@ export namespace Prisma {
     studentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignment?: AssignmentUpdateOneRequiredWithoutSubmissionsNestedInput
     student?: UserDataUpdateOneRequiredWithoutStudentSubmissionsNestedInput
   }
@@ -44751,15 +45108,15 @@ export namespace Prisma {
     studentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentSubmissionCreateManyInput = {
@@ -44768,30 +45125,30 @@ export namespace Prisma {
     studentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentSubmissionUncheckedUpdateManyInput = {
@@ -44800,15 +45157,15 @@ export namespace Prisma {
     studentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type NotificationCreateInput = {
@@ -44820,7 +45177,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
     user: UserDataCreateNestedOneWithoutNotificationsInput
   }
@@ -44835,7 +45192,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
   }
 
@@ -44848,7 +45205,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     user?: UserDataUpdateOneRequiredWithoutNotificationsNestedInput
   }
@@ -44863,7 +45220,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -44877,7 +45234,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
   }
 
@@ -44890,7 +45247,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -44904,7 +45261,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -44919,8 +45276,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     user?: UserDataCreateNestedOneWithoutDashboardContentsInput
   }
 
@@ -44935,8 +45292,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userId?: string | null
   }
 
@@ -44951,8 +45308,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     user?: UserDataUpdateOneWithoutDashboardContentsNestedInput
   }
 
@@ -44967,8 +45324,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userId?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
@@ -44983,8 +45340,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userId?: string | null
   }
 
@@ -44999,8 +45356,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type DashboardContentUncheckedUpdateManyInput = {
@@ -45014,8 +45371,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userId?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
@@ -45029,8 +45386,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     user?: UserDataCreateNestedOneWithoutAnnouncementsInput
   }
 
@@ -45044,8 +45401,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userId?: string | null
   }
 
@@ -45059,8 +45416,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     user?: UserDataUpdateOneWithoutAnnouncementsNestedInput
   }
 
@@ -45074,8 +45431,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userId?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
@@ -45089,8 +45446,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     userId?: string | null
   }
 
@@ -45104,8 +45461,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AnnouncementUncheckedUpdateManyInput = {
@@ -45118,8 +45475,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     userId?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
@@ -45131,8 +45488,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     user?: UserDataCreateNestedOneWithoutTahfidzRecordsInput
   }
 
@@ -45145,8 +45502,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TahfidzRecordUpdateInput = {
@@ -45157,8 +45514,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     user?: UserDataUpdateOneWithoutTahfidzRecordsNestedInput
   }
 
@@ -45171,8 +45528,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TahfidzRecordCreateManyInput = {
@@ -45184,8 +45541,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TahfidzRecordUpdateManyMutationInput = {
@@ -45196,8 +45553,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TahfidzRecordUncheckedUpdateManyInput = {
@@ -45209,8 +45566,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceCreateInput = {
@@ -45220,9 +45577,9 @@ export namespace Prisma {
     checkinTime?: Date | string | null
     checkoutTime?: Date | string | null
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    createdByUser: UserDataCreateNestedOneWithoutCreatedAttendancesInput
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
+    createdByUser?: UserDataCreateNestedOneWithoutCreatedAttendancesInput
     teacher: UserDataCreateNestedOneWithoutTeacherAttendancesInput
   }
 
@@ -45235,8 +45592,8 @@ export namespace Prisma {
     checkoutTime?: Date | string | null
     notes?: string | null
     createdBy: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceUpdateInput = {
@@ -45246,9 +45603,9 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    createdByUser?: UserDataUpdateOneRequiredWithoutCreatedAttendancesNestedInput
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdByUser?: UserDataUpdateOneWithoutCreatedAttendancesNestedInput
     teacher?: UserDataUpdateOneRequiredWithoutTeacherAttendancesNestedInput
   }
 
@@ -45261,8 +45618,8 @@ export namespace Prisma {
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceCreateManyInput = {
@@ -45274,8 +45631,8 @@ export namespace Prisma {
     checkoutTime?: Date | string | null
     notes?: string | null
     createdBy: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceUpdateManyMutationInput = {
@@ -45285,8 +45642,8 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceUncheckedUpdateManyInput = {
@@ -45298,8 +45655,8 @@ export namespace Prisma {
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type StringFilter<$PrismaModel = never> = {
@@ -45902,6 +46259,8 @@ export namespace Prisma {
     description?: SortOrder
     permissions?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type RoleMaxOrderByAggregateInput = {
@@ -45909,6 +46268,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type RoleMinOrderByAggregateInput = {
@@ -45916,6 +46277,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type CalendarEventListRelationFilter = {
@@ -46014,6 +46377,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type MajorMaxOrderByAggregateInput = {
@@ -46022,6 +46387,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type MajorMinOrderByAggregateInput = {
@@ -46030,6 +46397,8 @@ export namespace Prisma {
     name?: SortOrder
     description?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -46122,6 +46491,8 @@ export namespace Prisma {
     majorId?: SortOrder
     credits?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type SubjectAvgOrderByAggregateInput = {
@@ -46136,6 +46507,8 @@ export namespace Prisma {
     majorId?: SortOrder
     credits?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type SubjectMinOrderByAggregateInput = {
@@ -46146,6 +46519,8 @@ export namespace Prisma {
     majorId?: SortOrder
     credits?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type SubjectSumOrderByAggregateInput = {
@@ -46186,6 +46561,8 @@ export namespace Prisma {
     endTime?: SortOrder
     room?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type ScheduleAvgOrderByAggregateInput = {
@@ -46203,6 +46580,8 @@ export namespace Prisma {
     endTime?: SortOrder
     room?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type ScheduleMinOrderByAggregateInput = {
@@ -46216,6 +46595,8 @@ export namespace Prisma {
     endTime?: SortOrder
     room?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type ScheduleSumOrderByAggregateInput = {
@@ -46240,6 +46621,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
   }
 
@@ -46250,6 +46632,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
   }
 
@@ -46260,6 +46643,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
   }
 
@@ -46312,6 +46696,7 @@ export namespace Prisma {
     status?: SortOrder
     reportedBy?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     resolutionDate?: SortOrder
     resolutionNotes?: SortOrder
@@ -46326,6 +46711,7 @@ export namespace Prisma {
     status?: SortOrder
     reportedBy?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     resolutionDate?: SortOrder
     resolutionNotes?: SortOrder
@@ -46340,6 +46726,7 @@ export namespace Prisma {
     status?: SortOrder
     reportedBy?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     date?: SortOrder
     resolutionDate?: SortOrder
     resolutionNotes?: SortOrder
@@ -46363,6 +46750,8 @@ export namespace Prisma {
     amount?: SortOrder
     isMonthly?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type PaymentTypeAvgOrderByAggregateInput = {
@@ -46376,6 +46765,8 @@ export namespace Prisma {
     amount?: SortOrder
     isMonthly?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type PaymentTypeMinOrderByAggregateInput = {
@@ -46385,6 +46776,8 @@ export namespace Prisma {
     amount?: SortOrder
     isMonthly?: SortOrder
     isActive?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type PaymentTypeSumOrderByAggregateInput = {
@@ -46421,6 +46814,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     paymentDate?: SortOrder
     receiptNumber?: SortOrder
   }
@@ -46438,6 +46832,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     paymentDate?: SortOrder
     receiptNumber?: SortOrder
   }
@@ -46451,6 +46846,7 @@ export namespace Prisma {
     status?: SortOrder
     notes?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     paymentDate?: SortOrder
     receiptNumber?: SortOrder
   }
@@ -50106,10 +50502,12 @@ export namespace Prisma {
     connect?: UserDataWhereUniqueInput
   }
 
-  export type UserDataUpdateOneRequiredWithoutCreatedAttendancesNestedInput = {
+  export type UserDataUpdateOneWithoutCreatedAttendancesNestedInput = {
     create?: XOR<UserDataCreateWithoutCreatedAttendancesInput, UserDataUncheckedCreateWithoutCreatedAttendancesInput>
     connectOrCreate?: UserDataCreateOrConnectWithoutCreatedAttendancesInput
     upsert?: UserDataUpsertWithoutCreatedAttendancesInput
+    disconnect?: UserDataWhereInput | boolean
+    delete?: UserDataWhereInput | boolean
     connect?: UserDataWhereUniqueInput
     update?: XOR<XOR<UserDataUpdateToOneWithWhereWithoutCreatedAttendancesInput, UserDataUpdateWithoutCreatedAttendancesInput>, UserDataUncheckedUpdateWithoutCreatedAttendancesInput>
   }
@@ -50913,8 +51311,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AnnouncementUncheckedCreateWithoutUserInput = {
@@ -50927,8 +51325,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AnnouncementCreateOrConnectWithoutUserInput = {
@@ -50945,15 +51343,15 @@ export namespace Prisma {
     id?: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignment: AssignmentCreateNestedOneWithoutSubmissionsInput
   }
 
@@ -50962,15 +51360,15 @@ export namespace Prisma {
     assignmentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionCreateOrConnectWithoutStudentInput = {
@@ -50995,8 +51393,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     class: ClassCreateNestedOneWithoutAssignmentsInput
@@ -51021,8 +51419,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -51042,6 +51440,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     schedule: ScheduleCreateNestedOneWithoutAttendancesInput
   }
@@ -51052,6 +51451,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -51076,8 +51476,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type DashboardContentUncheckedCreateWithoutUserInput = {
@@ -51091,8 +51491,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type DashboardContentCreateOrConnectWithoutUserInput = {
@@ -51154,7 +51554,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
   }
 
@@ -51167,7 +51567,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
   }
 
@@ -51188,6 +51588,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
     paymentType: PaymentTypeCreateNestedOneWithoutPaymentsInput
@@ -51201,6 +51602,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -51278,6 +51680,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
@@ -51296,6 +51700,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
@@ -51319,8 +51725,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TahfidzRecordUncheckedCreateWithoutUserInput = {
@@ -51331,8 +51737,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TahfidzRecordCreateOrConnectWithoutUserInput = {
@@ -51352,8 +51758,8 @@ export namespace Prisma {
     checkinTime?: Date | string | null
     checkoutTime?: Date | string | null
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     teacher: UserDataCreateNestedOneWithoutTeacherAttendancesInput
   }
 
@@ -51365,8 +51771,8 @@ export namespace Prisma {
     checkinTime?: Date | string | null
     checkoutTime?: Date | string | null
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceCreateOrConnectWithoutCreatedByUserInput = {
@@ -51386,9 +51792,9 @@ export namespace Prisma {
     checkinTime?: Date | string | null
     checkoutTime?: Date | string | null
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
-    createdByUser: UserDataCreateNestedOneWithoutCreatedAttendancesInput
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
+    createdByUser?: UserDataCreateNestedOneWithoutCreatedAttendancesInput
   }
 
   export type TeacherAttendanceUncheckedCreateWithoutTeacherInput = {
@@ -51399,8 +51805,8 @@ export namespace Prisma {
     checkoutTime?: Date | string | null
     notes?: string | null
     createdBy: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceCreateOrConnectWithoutTeacherInput = {
@@ -51493,6 +51899,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassCreateNestedManyWithoutMajorInput
     subjects?: SubjectCreateNestedManyWithoutMajorInput
   }
@@ -51503,6 +51911,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassUncheckedCreateNestedManyWithoutMajorInput
     subjects?: SubjectUncheckedCreateNestedManyWithoutMajorInput
   }
@@ -51518,6 +51928,8 @@ export namespace Prisma {
     description: string
     permissions?: RoleCreatepermissionsInput | string[]
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type RoleUncheckedCreateWithoutUserDataInput = {
@@ -51526,6 +51938,8 @@ export namespace Prisma {
     description: string
     permissions?: RoleCreatepermissionsInput | string[]
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type RoleCreateOrConnectWithoutUserDataInput = {
@@ -51576,6 +51990,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -51591,6 +52006,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -51635,8 +52051,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"Announcement"> | boolean
     startDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     endDate?: DateTimeNullableFilter<"Announcement"> | Date | string | null
-    createdAt?: DateTimeFilter<"Announcement"> | Date | string
-    updatedAt?: DateTimeFilter<"Announcement"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Announcement"> | Date | string | null
     userId?: StringNullableFilter<"Announcement"> | string | null
   }
 
@@ -51665,15 +52081,15 @@ export namespace Prisma {
     studentId?: StringFilter<"AssignmentSubmission"> | string
     attachments?: JsonNullableFilter<"AssignmentSubmission">
     notes?: StringNullableFilter<"AssignmentSubmission"> | string | null
-    submittedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    submittedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     isLate?: BoolFilter<"AssignmentSubmission"> | boolean
     score?: DecimalNullableFilter<"AssignmentSubmission"> | Decimal | DecimalJsLike | number | string | null
     feedback?: StringNullableFilter<"AssignmentSubmission"> | string | null
     gradedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
     gradedBy?: StringNullableFilter<"AssignmentSubmission"> | string | null
     status?: StringFilter<"AssignmentSubmission"> | string
-    createdAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
-    updatedAt?: DateTimeFilter<"AssignmentSubmission"> | Date | string
+    createdAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"AssignmentSubmission"> | Date | string | null
   }
 
   export type AssignmentUpsertWithWhereUniqueWithoutTeacherInput = {
@@ -51712,8 +52128,8 @@ export namespace Prisma {
     gradeTypeId?: StringNullableFilter<"Assignment"> | string | null
     isPublished?: BoolFilter<"Assignment"> | boolean
     isActive?: BoolFilter<"Assignment"> | boolean
-    createdAt?: DateTimeFilter<"Assignment"> | Date | string
-    updatedAt?: DateTimeFilter<"Assignment"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Assignment"> | Date | string | null
     createdBy?: StringFilter<"Assignment"> | string
   }
 
@@ -51743,6 +52159,7 @@ export namespace Prisma {
     status?: StringFilter<"Attendance"> | string
     notes?: StringNullableFilter<"Attendance"> | string | null
     createdAt?: DateTimeFilter<"Attendance"> | Date | string
+    updatedAt?: DateTimeFilter<"Attendance"> | Date | string
     date?: DateTimeFilter<"Attendance"> | Date | string
   }
 
@@ -51776,8 +52193,8 @@ export namespace Prisma {
     isPublished?: BoolFilter<"DashboardContent"> | boolean
     startDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     endDate?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
-    createdAt?: DateTimeFilter<"DashboardContent"> | Date | string
-    updatedAt?: DateTimeFilter<"DashboardContent"> | Date | string
+    createdAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"DashboardContent"> | Date | string | null
     userId?: StringNullableFilter<"DashboardContent"> | string | null
   }
 
@@ -51845,7 +52262,7 @@ export namespace Prisma {
     isRead?: BoolFilter<"Notification"> | boolean
     link?: StringNullableFilter<"Notification"> | string | null
     data?: JsonNullableFilter<"Notification">
-    createdAt?: DateTimeFilter<"Notification"> | Date | string
+    createdAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
     readAt?: DateTimeNullableFilter<"Notification"> | Date | string | null
   }
 
@@ -51877,6 +52294,7 @@ export namespace Prisma {
     status?: StringFilter<"Payment"> | string
     notes?: StringNullableFilter<"Payment"> | string | null
     createdAt?: DateTimeFilter<"Payment"> | Date | string
+    updatedAt?: DateTimeFilter<"Payment"> | Date | string
     paymentDate?: DateTimeFilter<"Payment"> | Date | string
     receiptNumber?: StringNullableFilter<"Payment"> | string | null
   }
@@ -51954,6 +52372,8 @@ export namespace Prisma {
     endTime?: StringFilter<"Schedule"> | string
     room?: StringNullableFilter<"Schedule"> | string | null
     isActive?: BoolFilter<"Schedule"> | boolean
+    createdAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Schedule"> | Date | string | null
   }
 
   export type TahfidzRecordUpsertWithWhereUniqueWithoutUserInput = {
@@ -51984,8 +52404,8 @@ export namespace Prisma {
     grade?: StringNullableFilter<"TahfidzRecord"> | string | null
     date?: DateTimeFilter<"TahfidzRecord"> | Date | string
     notes?: StringNullableFilter<"TahfidzRecord"> | string | null
-    createdAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
-    updatedAt?: DateTimeFilter<"TahfidzRecord"> | Date | string
+    createdAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TahfidzRecord"> | Date | string | null
   }
 
   export type TeacherAttendanceUpsertWithWhereUniqueWithoutCreatedByUserInput = {
@@ -52016,8 +52436,8 @@ export namespace Prisma {
     checkoutTime?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
     notes?: StringNullableFilter<"TeacherAttendance"> | string | null
     createdBy?: StringFilter<"TeacherAttendance"> | string
-    createdAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
-    updatedAt?: DateTimeFilter<"TeacherAttendance"> | Date | string
+    createdAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"TeacherAttendance"> | Date | string | null
   }
 
   export type TeacherAttendanceUpsertWithWhereUniqueWithoutTeacherInput = {
@@ -52139,6 +52559,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUpdateManyWithoutMajorNestedInput
     subjects?: SubjectUpdateManyWithoutMajorNestedInput
   }
@@ -52149,6 +52571,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUncheckedUpdateManyWithoutMajorNestedInput
     subjects?: SubjectUncheckedUpdateManyWithoutMajorNestedInput
   }
@@ -52170,6 +52594,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type RoleUncheckedUpdateWithoutUserDataInput = {
@@ -52178,6 +52604,8 @@ export namespace Prisma {
     description?: StringFieldUpdateOperationsInput | string
     permissions?: RoleUpdatepermissionsInput | string[]
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserUpsertWithoutUserDataInput = {
@@ -52251,6 +52679,7 @@ export namespace Prisma {
     status?: StringFilter<"Violation"> | string
     reportedBy?: StringFilter<"Violation"> | string
     createdAt?: DateTimeFilter<"Violation"> | Date | string
+    updatedAt?: DateTimeFilter<"Violation"> | Date | string
     date?: DateTimeFilter<"Violation"> | Date | string
     resolutionDate?: DateTimeNullableFilter<"Violation"> | Date | string | null
     resolutionNotes?: StringNullableFilter<"Violation"> | string | null
@@ -52516,8 +52945,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type GradeScaleUncheckedCreateWithoutAcademicYearInput = {
@@ -52526,8 +52955,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type GradeScaleCreateOrConnectWithoutAcademicYearInput = {
@@ -52603,6 +53032,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
@@ -52621,6 +53052,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
@@ -52880,8 +53313,8 @@ export namespace Prisma {
     maxScore?: DecimalFilter<"GradeScale"> | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFilter<"GradeScale"> | string
     predicate?: StringFilter<"GradeScale"> | string
-    createdAt?: DateTimeFilter<"GradeScale"> | Date | string
-    updatedAt?: DateTimeFilter<"GradeScale"> | Date | string
+    createdAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"GradeScale"> | Date | string | null
   }
 
   export type ReportCardUpsertWithWhereUniqueWithoutAcademicYearInput = {
@@ -53007,6 +53440,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
@@ -53021,6 +53456,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
@@ -53179,6 +53616,8 @@ export namespace Prisma {
     majorId?: StringNullableFilter<"Subject"> | string | null
     credits?: IntFilter<"Subject"> | number
     isActive?: BoolFilter<"Subject"> | boolean
+    createdAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
+    updatedAt?: DateTimeNullableFilter<"Subject"> | Date | string | null
   }
 
   export type UserDataUpsertWithWhereUniqueWithoutMajorInput = {
@@ -53209,8 +53648,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     gradeType?: GradeTypeCreateNestedOneWithoutAssignmentsInput
@@ -53235,8 +53674,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -53296,6 +53735,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     subjects?: SubjectCreateNestedManyWithoutMajorInput
     students?: UserDataCreateNestedManyWithoutMajorInput
   }
@@ -53306,6 +53747,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     subjects?: SubjectUncheckedCreateNestedManyWithoutMajorInput
     students?: UserDataUncheckedCreateNestedManyWithoutMajorInput
   }
@@ -53412,6 +53855,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
@@ -53430,6 +53875,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
@@ -53549,6 +53996,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -53564,6 +54012,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -53657,6 +54106,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subjects?: SubjectUpdateManyWithoutMajorNestedInput
     students?: UserDataUpdateManyWithoutMajorNestedInput
   }
@@ -53667,6 +54118,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     subjects?: SubjectUncheckedUpdateManyWithoutMajorNestedInput
     students?: UserDataUncheckedUpdateManyWithoutMajorNestedInput
   }
@@ -53763,8 +54216,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     class: ClassCreateNestedOneWithoutAssignmentsInput
@@ -53789,8 +54242,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -53942,6 +54395,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
@@ -53960,6 +54415,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
@@ -53981,6 +54438,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassCreateNestedManyWithoutMajorInput
     students?: UserDataCreateNestedManyWithoutMajorInput
   }
@@ -53991,6 +54450,8 @@ export namespace Prisma {
     name: string
     description?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     classes?: ClassUncheckedCreateNestedManyWithoutMajorInput
     students?: UserDataUncheckedCreateNestedManyWithoutMajorInput
   }
@@ -54097,6 +54558,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUpdateManyWithoutMajorNestedInput
     students?: UserDataUpdateManyWithoutMajorNestedInput
   }
@@ -54107,6 +54570,8 @@ export namespace Prisma {
     name?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     classes?: ClassUncheckedUpdateManyWithoutMajorNestedInput
     students?: UserDataUncheckedUpdateManyWithoutMajorNestedInput
   }
@@ -54123,8 +54588,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     class: ClassCreateNestedOneWithoutAssignmentsInput
@@ -54149,8 +54614,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -54170,6 +54635,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     student: UserDataCreateNestedOneWithoutAttendancesInput
   }
@@ -54180,6 +54646,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -54314,6 +54781,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
@@ -54329,6 +54798,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
@@ -54585,6 +55056,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
@@ -54600,6 +55073,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
@@ -54712,6 +55187,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
     academicYear: AcademicYearCreateNestedOneWithoutSchedulesInput
@@ -54731,6 +55208,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
   }
@@ -54851,6 +55330,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
     academicYear?: AcademicYearUpdateOneRequiredWithoutSchedulesNestedInput
@@ -54870,6 +55351,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
   }
@@ -55018,6 +55501,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -55033,6 +55517,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -55436,6 +55921,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
     student: UserDataCreateNestedOneWithoutPaymentsInput
@@ -55449,6 +55935,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -55486,6 +55973,8 @@ export namespace Prisma {
     amount: Decimal | DecimalJsLike | number | string
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type PaymentTypeUncheckedCreateWithoutPaymentsInput = {
@@ -55495,6 +55984,8 @@ export namespace Prisma {
     amount: Decimal | DecimalJsLike | number | string
     isMonthly?: boolean
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type PaymentTypeCreateOrConnectWithoutPaymentsInput = {
@@ -55613,6 +56104,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type PaymentTypeUncheckedUpdateWithoutPaymentsInput = {
@@ -55622,6 +56115,8 @@ export namespace Prisma {
     amount?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isMonthly?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserDataUpsertWithoutPaymentsInput = {
@@ -55819,8 +56314,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionCreateNestedManyWithoutAssignmentInput
     class: ClassCreateNestedOneWithoutAssignmentsInput
@@ -55845,8 +56340,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     submissions?: AssignmentSubmissionUncheckedCreateNestedManyWithoutAssignmentInput
   }
@@ -56097,6 +56592,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardCreateNestedManyWithoutSubjectInput
@@ -56112,6 +56609,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardUncheckedCreateNestedManyWithoutSubjectInput
@@ -56266,6 +56765,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUpdateManyWithoutSubjectNestedInput
@@ -56281,6 +56782,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUncheckedUpdateManyWithoutSubjectNestedInput
@@ -56327,6 +56830,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     academicYear: AcademicYearCreateNestedOneWithoutSchedulesInput
@@ -56346,6 +56851,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutScheduleInput
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
   }
@@ -56455,6 +56962,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardCreateNestedManyWithoutSubjectInput
@@ -56470,6 +56979,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardUncheckedCreateNestedManyWithoutSubjectInput
@@ -56538,6 +57049,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     academicYear?: AcademicYearUpdateOneRequiredWithoutSchedulesNestedInput
@@ -56557,6 +57070,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
   }
@@ -56678,6 +57193,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUpdateManyWithoutSubjectNestedInput
@@ -56693,6 +57210,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUncheckedUpdateManyWithoutSubjectNestedInput
@@ -56873,6 +57392,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
@@ -56888,6 +57409,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     assignments?: AssignmentUncheckedCreateNestedManyWithoutSubjectInput
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
@@ -57102,6 +57625,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
@@ -57117,6 +57642,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
@@ -57211,15 +57738,15 @@ export namespace Prisma {
     id?: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     student: UserDataCreateNestedOneWithoutStudentSubmissionsInput
   }
 
@@ -57228,15 +57755,15 @@ export namespace Prisma {
     studentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionCreateOrConnectWithoutAssignmentInput = {
@@ -57324,6 +57851,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     attendances?: AttendanceCreateNestedManyWithoutScheduleInput
     grades?: GradeCreateNestedManyWithoutScheduleInput
     academicYear: AcademicYearCreateNestedOneWithoutSchedulesInput
@@ -57343,6 +57872,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     attendances?: AttendanceUncheckedCreateNestedManyWithoutScheduleInput
     grades?: GradeUncheckedCreateNestedManyWithoutScheduleInput
   }
@@ -57359,6 +57890,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     gradeConfigurations?: GradeConfigurationCreateNestedManyWithoutSubjectInput
     grades?: GradeCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardCreateNestedManyWithoutSubjectInput
@@ -57374,6 +57907,8 @@ export namespace Prisma {
     majorId?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     gradeConfigurations?: GradeConfigurationUncheckedCreateNestedManyWithoutSubjectInput
     grades?: GradeUncheckedCreateNestedManyWithoutSubjectInput
     reportCards?: ReportCardUncheckedCreateNestedManyWithoutSubjectInput
@@ -57592,6 +58127,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
     academicYear?: AcademicYearUpdateOneRequiredWithoutSchedulesNestedInput
@@ -57611,6 +58148,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
   }
@@ -57633,6 +58172,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUpdateManyWithoutSubjectNestedInput
@@ -57648,6 +58189,8 @@ export namespace Prisma {
     majorId?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
     reportCards?: ReportCardUncheckedUpdateManyWithoutSubjectNestedInput
@@ -57765,8 +58308,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
     class: ClassCreateNestedOneWithoutAssignmentsInput
     gradeType?: GradeTypeCreateNestedOneWithoutAssignmentsInput
@@ -57792,8 +58335,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -57918,8 +58461,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
     gradeType?: GradeTypeUpdateOneWithoutAssignmentsNestedInput
@@ -57945,8 +58488,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -59315,8 +59858,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionCreateManyStudentInput = {
@@ -59324,15 +59867,15 @@ export namespace Prisma {
     assignmentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentCreateManyTeacherInput = {
@@ -59351,8 +59894,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -59362,6 +59905,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -59376,8 +59920,8 @@ export namespace Prisma {
     isPublished?: boolean
     startDate?: Date | string | null
     endDate?: Date | string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type GradeCreateManyStudentInput = {
@@ -59404,7 +59948,7 @@ export namespace Prisma {
     isRead?: boolean
     link?: string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: Date | string
+    createdAt?: Date | string | null
     readAt?: Date | string | null
   }
 
@@ -59416,6 +59960,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -59453,6 +59998,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TahfidzRecordCreateManyUserInput = {
@@ -59463,8 +60010,8 @@ export namespace Prisma {
     grade?: string | null
     date: Date | string
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceCreateManyCreatedByUserInput = {
@@ -59475,8 +60022,8 @@ export namespace Prisma {
     checkinTime?: Date | string | null
     checkoutTime?: Date | string | null
     notes?: string | null
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type TeacherAttendanceCreateManyTeacherInput = {
@@ -59487,8 +60034,8 @@ export namespace Prisma {
     checkoutTime?: Date | string | null
     notes?: string | null
     createdBy: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type ViolationCreateManyStudentInput = {
@@ -59499,6 +60046,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -59514,8 +60062,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AnnouncementUncheckedUpdateWithoutUserInput = {
@@ -59528,8 +60076,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AnnouncementUncheckedUpdateManyWithoutUserInput = {
@@ -59542,23 +60090,23 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentSubmissionUpdateWithoutStudentInput = {
     id?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignment?: AssignmentUpdateOneRequiredWithoutSubmissionsNestedInput
   }
 
@@ -59567,15 +60115,15 @@ export namespace Prisma {
     assignmentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentSubmissionUncheckedUpdateManyWithoutStudentInput = {
@@ -59583,15 +60131,15 @@ export namespace Prisma {
     assignmentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentUpdateWithoutTeacherInput = {
@@ -59606,8 +60154,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
@@ -59632,8 +60180,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -59654,8 +60202,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -59664,6 +60212,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     schedule?: ScheduleUpdateOneRequiredWithoutAttendancesNestedInput
   }
@@ -59674,6 +60223,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -59683,6 +60233,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -59697,8 +60248,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type DashboardContentUncheckedUpdateWithoutUserInput = {
@@ -59712,8 +60263,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type DashboardContentUncheckedUpdateManyWithoutUserInput = {
@@ -59727,8 +60278,8 @@ export namespace Prisma {
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     startDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     endDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type GradeUpdateWithoutStudentInput = {
@@ -59785,7 +60336,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -59798,7 +60349,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -59811,7 +60362,7 @@ export namespace Prisma {
     isRead?: BoolFieldUpdateOperationsInput | boolean
     link?: NullableStringFieldUpdateOperationsInput | string | null
     data?: NullableJsonNullValueInput | InputJsonValue
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     readAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
@@ -59822,6 +60373,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
     paymentType?: PaymentTypeUpdateOneRequiredWithoutPaymentsNestedInput
@@ -59835,6 +60387,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -59847,6 +60400,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -59927,6 +60481,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
@@ -59945,6 +60501,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
@@ -59960,6 +60518,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TahfidzRecordUpdateWithoutUserInput = {
@@ -59970,8 +60530,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TahfidzRecordUncheckedUpdateWithoutUserInput = {
@@ -59982,8 +60542,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TahfidzRecordUncheckedUpdateManyWithoutUserInput = {
@@ -59994,8 +60554,8 @@ export namespace Prisma {
     grade?: NullableStringFieldUpdateOperationsInput | string | null
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceUpdateWithoutCreatedByUserInput = {
@@ -60005,8 +60565,8 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     teacher?: UserDataUpdateOneRequiredWithoutTeacherAttendancesNestedInput
   }
 
@@ -60018,8 +60578,8 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceUncheckedUpdateManyWithoutCreatedByUserInput = {
@@ -60030,8 +60590,8 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceUpdateWithoutTeacherInput = {
@@ -60041,9 +60601,9 @@ export namespace Prisma {
     checkinTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    createdByUser?: UserDataUpdateOneRequiredWithoutCreatedAttendancesNestedInput
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdByUser?: UserDataUpdateOneWithoutCreatedAttendancesNestedInput
   }
 
   export type TeacherAttendanceUncheckedUpdateWithoutTeacherInput = {
@@ -60054,8 +60614,8 @@ export namespace Prisma {
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type TeacherAttendanceUncheckedUpdateManyWithoutTeacherInput = {
@@ -60066,8 +60626,8 @@ export namespace Prisma {
     checkoutTime?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type ViolationUpdateWithoutStudentInput = {
@@ -60076,6 +60636,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60091,6 +60652,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60104,6 +60666,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -60295,8 +60858,8 @@ export namespace Prisma {
     maxScore: Decimal | DecimalJsLike | number | string
     letterGrade: string
     predicate: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type ReportCardCreateManyAcademicYearInput = {
@@ -60332,6 +60895,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type UserDataCreateManyAcademicYearInput = {
@@ -60486,8 +61051,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type GradeScaleUncheckedUpdateWithoutAcademicYearInput = {
@@ -60496,8 +61061,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type GradeScaleUncheckedUpdateManyWithoutAcademicYearInput = {
@@ -60506,8 +61071,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     letterGrade?: StringFieldUpdateOperationsInput | string
     predicate?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type ReportCardUpdateWithoutAcademicYearInput = {
@@ -60586,6 +61151,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
@@ -60604,6 +61171,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
@@ -60619,6 +61188,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserDataUpdateWithoutAcademicYearInput = {
@@ -60781,6 +61352,8 @@ export namespace Prisma {
     description?: string | null
     credits?: number
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type UserDataCreateManyMajorInput = {
@@ -60859,6 +61432,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUpdateManyWithoutSubjectNestedInput
     grades?: GradeUpdateManyWithoutSubjectNestedInput
@@ -60873,6 +61448,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutSubjectNestedInput
     gradeConfigurations?: GradeConfigurationUncheckedUpdateManyWithoutSubjectNestedInput
     grades?: GradeUncheckedUpdateManyWithoutSubjectNestedInput
@@ -60887,6 +61464,8 @@ export namespace Prisma {
     description?: NullableStringFieldUpdateOperationsInput | string | null
     credits?: IntFieldUpdateOperationsInput | number
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserDataUpdateWithoutMajorInput = {
@@ -61023,8 +61602,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -61073,6 +61652,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type UserDataCreateManyClassInput = {
@@ -61113,6 +61694,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -61130,8 +61712,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     gradeType?: GradeTypeUpdateOneWithoutAssignmentsNestedInput
@@ -61156,8 +61738,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -61178,8 +61760,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -61295,6 +61877,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
@@ -61313,6 +61897,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
@@ -61328,6 +61914,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type UserDataUpdateWithoutClassInput = {
@@ -61454,6 +62042,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -61469,6 +62058,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -61482,6 +62072,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -61503,8 +62094,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -61568,6 +62159,8 @@ export namespace Prisma {
     endTime: string
     room?: string | null
     isActive?: boolean
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentUpdateWithoutSubjectInput = {
@@ -61582,8 +62175,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
@@ -61608,8 +62201,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -61630,8 +62223,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -61792,6 +62385,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUpdateManyWithoutScheduleNestedInput
     grades?: GradeUpdateManyWithoutScheduleNestedInput
@@ -61810,6 +62405,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     assignments?: AssignmentUncheckedUpdateManyWithoutScheduleNestedInput
     attendances?: AttendanceUncheckedUpdateManyWithoutScheduleNestedInput
     grades?: GradeUncheckedUpdateManyWithoutScheduleNestedInput
@@ -61825,6 +62422,8 @@ export namespace Prisma {
     endTime?: StringFieldUpdateOperationsInput | string
     room?: NullableStringFieldUpdateOperationsInput | string | null
     isActive?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentCreateManyScheduleInput = {
@@ -61843,8 +62442,8 @@ export namespace Prisma {
     gradeTypeId?: string | null
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -61854,6 +62453,7 @@ export namespace Prisma {
     status: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
   }
 
@@ -61884,8 +62484,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
@@ -61910,8 +62510,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -61932,8 +62532,8 @@ export namespace Prisma {
     gradeTypeId?: NullableStringFieldUpdateOperationsInput | string | null
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -61942,6 +62542,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     student?: UserDataUpdateOneRequiredWithoutAttendancesNestedInput
   }
@@ -61952,6 +62553,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -61961,6 +62563,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -62017,6 +62620,7 @@ export namespace Prisma {
     status?: string
     reportedBy: string
     createdAt?: Date | string
+    updatedAt?: Date | string
     date: Date | string
     resolutionDate?: Date | string | null
     resolutionNotes?: string | null
@@ -62028,6 +62632,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -62043,6 +62648,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -62056,6 +62662,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     reportedBy?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     date?: DateTimeFieldUpdateOperationsInput | Date | string
     resolutionDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     resolutionNotes?: NullableStringFieldUpdateOperationsInput | string | null
@@ -62069,6 +62676,7 @@ export namespace Prisma {
     status?: string
     notes?: string | null
     createdAt?: Date | string
+    updatedAt?: Date | string
     paymentDate: Date | string
     receiptNumber?: string | null
   }
@@ -62080,6 +62688,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
     student?: UserDataUpdateOneRequiredWithoutPaymentsNestedInput
@@ -62093,6 +62702,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -62105,6 +62715,7 @@ export namespace Prisma {
     status?: StringFieldUpdateOperationsInput | string
     notes?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     paymentDate?: DateTimeFieldUpdateOperationsInput | Date | string
     receiptNumber?: NullableStringFieldUpdateOperationsInput | string | null
   }
@@ -62125,8 +62736,8 @@ export namespace Prisma {
     maxScore?: Decimal | DecimalJsLike | number | string
     isPublished?: boolean
     isActive?: boolean
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
     createdBy: string
   }
 
@@ -62169,8 +62780,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUpdateManyWithoutAssignmentNestedInput
     class?: ClassUpdateOneRequiredWithoutAssignmentsNestedInput
@@ -62195,8 +62806,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
     submissions?: AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentNestedInput
   }
@@ -62217,8 +62828,8 @@ export namespace Prisma {
     maxScore?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     isPublished?: BoolFieldUpdateOperationsInput | boolean
     isActive?: BoolFieldUpdateOperationsInput | boolean
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     createdBy?: StringFieldUpdateOperationsInput | string
   }
 
@@ -62308,30 +62919,30 @@ export namespace Prisma {
     studentId: string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: string | null
-    submittedAt?: Date | string
+    submittedAt?: Date | string | null
     isLate?: boolean
     score?: Decimal | DecimalJsLike | number | string | null
     feedback?: string | null
     gradedAt?: Date | string | null
     gradedBy?: string | null
     status?: string
-    createdAt?: Date | string
-    updatedAt?: Date | string
+    createdAt?: Date | string | null
+    updatedAt?: Date | string | null
   }
 
   export type AssignmentSubmissionUpdateWithoutAssignmentInput = {
     id?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     student?: UserDataUpdateOneRequiredWithoutStudentSubmissionsNestedInput
   }
 
@@ -62340,15 +62951,15 @@ export namespace Prisma {
     studentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
   export type AssignmentSubmissionUncheckedUpdateManyWithoutAssignmentInput = {
@@ -62356,15 +62967,15 @@ export namespace Prisma {
     studentId?: StringFieldUpdateOperationsInput | string
     attachments?: NullableJsonNullValueInput | InputJsonValue
     notes?: NullableStringFieldUpdateOperationsInput | string | null
-    submittedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    submittedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     isLate?: BoolFieldUpdateOperationsInput | boolean
     score?: NullableDecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string | null
     feedback?: NullableStringFieldUpdateOperationsInput | string | null
     gradedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     gradedBy?: NullableStringFieldUpdateOperationsInput | string | null
     status?: StringFieldUpdateOperationsInput | string
-    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   }
 
 

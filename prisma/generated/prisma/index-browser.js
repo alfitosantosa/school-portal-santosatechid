@@ -208,7 +208,9 @@ exports.Prisma.RoleScalarFieldEnum = {
   name: 'name',
   description: 'description',
   permissions: 'permissions',
-  isActive: 'isActive'
+  isActive: 'isActive',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.AcademicYearScalarFieldEnum = {
@@ -226,7 +228,9 @@ exports.Prisma.MajorScalarFieldEnum = {
   code: 'code',
   name: 'name',
   description: 'description',
-  isActive: 'isActive'
+  isActive: 'isActive',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.ClassScalarFieldEnum = {
@@ -246,7 +250,9 @@ exports.Prisma.SubjectScalarFieldEnum = {
   description: 'description',
   majorId: 'majorId',
   credits: 'credits',
-  isActive: 'isActive'
+  isActive: 'isActive',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.ScheduleScalarFieldEnum = {
@@ -259,7 +265,9 @@ exports.Prisma.ScheduleScalarFieldEnum = {
   startTime: 'startTime',
   endTime: 'endTime',
   room: 'room',
-  isActive: 'isActive'
+  isActive: 'isActive',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.AttendanceScalarFieldEnum = {
@@ -269,6 +277,7 @@ exports.Prisma.AttendanceScalarFieldEnum = {
   status: 'status',
   notes: 'notes',
   createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
   date: 'date'
 };
 
@@ -290,6 +299,7 @@ exports.Prisma.ViolationScalarFieldEnum = {
   status: 'status',
   reportedBy: 'reportedBy',
   createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
   date: 'date',
   resolutionDate: 'resolutionDate',
   resolutionNotes: 'resolutionNotes'
@@ -301,7 +311,9 @@ exports.Prisma.PaymentTypeScalarFieldEnum = {
   description: 'description',
   amount: 'amount',
   isMonthly: 'isMonthly',
-  isActive: 'isActive'
+  isActive: 'isActive',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.PaymentScalarFieldEnum = {
@@ -313,6 +325,7 @@ exports.Prisma.PaymentScalarFieldEnum = {
   status: 'status',
   notes: 'notes',
   createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
   paymentDate: 'paymentDate',
   receiptNumber: 'receiptNumber'
 };
