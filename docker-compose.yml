@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
 
     ports:
-      - "${PORT:-3333}:333"
+      - "${PORT:-3333}:3333"
 
     environment:
       - NODE_ENV=production
