@@ -45,6 +45,7 @@ const permissionLabels: Record<string, string> = {
   "/dashboard/recapattendance": "Rekap Absensi",
   "/dashboard/calender/list/teacher": "Kalender List untuk Guru",
   "/dashboard/calender/list/student": "Kalender List untuk Siswa",
+  "/dashboard/paymenttypes": "Jenis Pembayaran",
 };
 
 export default function Navbar() {
