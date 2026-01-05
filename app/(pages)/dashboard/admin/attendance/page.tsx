@@ -145,7 +145,7 @@ function TeacherAttendancePage() {
               <CardDescription>Pilih hari dan guru untuk melihat jadwal spesifik</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex items-center gap-6">
+              <div className="flex flex-wrap items-center gap-6">
                 <div className="flex items-center gap-4">
                   <label className="text-sm font-medium text-slate-700 min-w-fit">Pilih Hari:</label>
                   <Select value={selectedDay} onValueChange={setSelectedDay}>
