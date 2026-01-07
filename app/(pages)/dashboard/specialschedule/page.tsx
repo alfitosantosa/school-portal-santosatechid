@@ -715,6 +715,14 @@ function SpecialScheduleDataTable() {
             </TableBody>
           </Table>
         </div>
+        <div className="flex mt-2 justify-end space-x-2">
+          <Button variant="outline" size="sm" onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()}>
+            Sebelumnya
+          </Button>
+          <Button variant="outline" size="sm" onClick={() => table.nextPage()} disabled={!table.getCanNextPage()}>
+            Selanjutnya
+          </Button>
+        </div>
       </div>
 
       {/* Dialogs */}
